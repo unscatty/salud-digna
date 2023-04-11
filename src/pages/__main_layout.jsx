@@ -1,8 +1,8 @@
 export default function MainLayout() {
   return (
     <>
-      <div className="container px-10 pt-4">
-        <Header />
+      <Header />
+      <div className="container px-6 text-black">
         {/* Main content goes here */}
         <Outlet />
         {/* End on main content */}

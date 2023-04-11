@@ -5,9 +5,7 @@
 export {}
 declare global {
   const BottomNavbar: typeof import('./components/common/BottomNavbar.jsx')['default']
-  const Header: typeof import('./components/common/Header.jsx')['default']
-  const HeaderBuilder: typeof import('./components/common/header/HeaderBuilder.jsx')['default']
-  const HeaderItems: typeof import('./components/common/header/HeaderItems.jsx')['HeaderItems']
+  const Header: typeof import('./components/common/header/Header.jsx')['default']
   const HomeHeader: typeof import('./components/common/header/HomeHeader.jsx')['default']
   const Link: typeof import('react-router-dom')['Link']
   const NavLink: typeof import('react-router-dom')['NavLink']

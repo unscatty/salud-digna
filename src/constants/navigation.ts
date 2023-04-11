@@ -5,8 +5,8 @@ export const NavigationItems = [
     iconClass: 'i-heroicons:home-20-solid',
   },
   {
-    name: 'Estadísticas',
-    path: '/estadisticas',
+    name: 'Tu Progreso',
+    path: '/tu-progreso',
     iconClass: 'i-heroicons:chart-bar-20-solid',
   },
   {
