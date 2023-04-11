@@ -26,7 +26,8 @@ export default defineConfig({
       imports: [
         'react',
         'react-router-dom',
-        'react-i18next'
+        'react-i18next',
+        'ahooks'
       ],
       dts: './src/auto-imports.d.ts',
       dirs: ['src/components/**/*', 'src/hooks'],

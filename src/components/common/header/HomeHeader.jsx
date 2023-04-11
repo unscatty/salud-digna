@@ -1,4 +1,4 @@
-export default function HomeHeader() {
+export default function HomeHeader(isSticky) {
   return (
     <div>
       <p className="text-sm font-bold">Buenos días, Juan</p>

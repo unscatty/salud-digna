@@ -14,7 +14,7 @@
   -webkit-text-size-adjust: 100%;
   --inactive-icon-color: #868589;
   --active-icon-color: #68a961;
-  --background-color: #f7f7f7;
+  --background-color: #DDF4DB;
 
   background-color: var(--background-color);
 }
@@ -44,7 +44,6 @@ body,
 .no-scrollbar::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera*/
 }
-
 
 #nprogress {
   pointer-events: none;

@@ -18,7 +18,7 @@ export default function EstiloDeVida() {
             </div>
           ))}
       </div>
-      <div className="-mx-6 px-6 flex overflow-x-auto gap-3.5 my-4 no-scrollbar">
+      <div className="-mx-global px-global flex overflow-x-auto gap-3.5 my-4 no-scrollbar">
         {Array(10)
           .fill()
           .map((_, index) => (

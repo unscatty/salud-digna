@@ -9,6 +9,7 @@ import {
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss';
+import presetAutoprefixer from 'unocss-preset-autoprefixer';
 
 import { NavigationItems } from './src/constants/navigation';
 
@@ -20,6 +21,10 @@ export default defineConfig({
       iconInactive: '#868589',
     },
   },
+  shortcuts: [
+    ['px-global', 'px-6'],
+    ['mx-global', 'mx-6'],
+  ],
   presets: [
     presetAttributify(),
     presetIcons({
@@ -36,6 +41,7 @@ export default defineConfig({
     }),
     presetForms(),
     presetWind(),
+    presetAutoprefixer(),
   ],
   transformers: [transformerDirectives(), transformerVariantGroup()],
   safelist: [
