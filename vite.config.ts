@@ -64,6 +64,8 @@ export default defineConfig({
         ],
       },
     }),
-    Pages()
+    Pages({
+      routeStyle: 'remix'
+    })
   ],
 })
