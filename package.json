@@ -10,13 +10,16 @@
     "preview-https": "serve dist"
   },
   "dependencies": {
+    "@faker-js/faker": "^7.6.0",
     "@headlessui/react": "^1.7.13",
     "@heroicons/react": "^1.0.6",
     "@julr/unocss-preset-forms": "^0.0.3",
     "@unocss/reset": "^0.50.6",
     "ahooks": "^3.7.6",
+    "chart.js": "^4.2.1",
     "nprogress": "^0.2.0",
     "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
     "react-router": "^6.10.0",
     "react-router-dom": "^6.10.0"
@@ -25,6 +28,8 @@
     "@iconify-json/fa-solid": "^1.1.4",
     "@iconify-json/fa6-solid": "^1.1.13",
     "@iconify-json/heroicons": "^1.1.10",
+    "@iconify-json/ion": "^1.1.9",
+    "@iconify-json/mdi": "^1.1.50",
     "@iconify-json/simple-icons": "^1.1.47",
     "@types/node": "^18.15.5",
     "@types/nprogress": "^0.2.0",

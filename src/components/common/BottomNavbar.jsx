@@ -34,7 +34,6 @@ export default function BottomNavbar() {
             return (
               <NavLink
                 key={navItem.name}
-                activeClassName="text-icon-active"
                 className={({ isActive }) =>
                   `${
                     isActive ? 'text-icon-active' : 'text-icon-inactive'
