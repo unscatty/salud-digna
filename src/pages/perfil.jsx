@@ -1,5 +1,11 @@
 import BottomNavbar from '~/components/common/BottomNavbar';
 export default function Perfil() {
+  const logout = () => {
+    localStorage.setItem('isLogged', null);
+
+    window.location.href = '/login';
+  };
+
   return (
     <>
       <div className="h-15 w-100% flex items-center">
@@ -24,6 +30,12 @@ export default function Perfil() {
         <div className="w-75 h-10 inline-flex justify-center items-center border-rounded-3xl bg-gray-300">
           <p className="text-l text-black">Soporte</p>
         </div>
+        <button
+          onClick={logout}
+          className="w-75 h-10 inline-flex justify-center items-center border-rounded-3xl bg-gray-300"
+        >
+          <p className="text-l text-black">Cerrar Sesión</p>
+        </button>
       </div>
       <BottomNavbar />
     </>

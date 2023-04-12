@@ -1,6 +1,23 @@
 import logo from '/assets/logo2.svg';
+// import { redirect } from 'react-router-dom';
 
 export default function Login() {
+  useEffect(() => {
+    const isLogged = localStorage.getItem('isLogged');
+
+    console.log({ isLogged });
+
+    if (isLogged && isLogged === 'true') {
+      window.location.href = '/';
+    }
+  }, []);
+
+  const handleLogin = () => {
+    localStorage.setItem('isLogged', true);
+
+    window.location.href = '/';
+  };
+
   return (
     <>
       <div className="min-h-screen bg-first sm:py-12 w-screen h-screen text-black">
@@ -27,7 +44,7 @@ export default function Login() {
                 placeholder=" "
               />
               <label
-                for="floating_standard"
+                htmlFor="floating_standard"
                 className="absolute text-sm text-fifth dark:text-fifth duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-fifth peer-focus:dark:text-fifth peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
               >
                 Usuario
@@ -41,19 +58,19 @@ export default function Login() {
                 placeholder=" "
               />
               <label
-                for="floating_standard"
+                htmlFor="floating_standard"
                 className="absolute text-sm text-fifth dark:text-fifthduration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-fifth peer-focus:dark:text-fifth peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
               >
                 Contraseña
               </label>
             </div>
             <div className="bg-white mt-10 rounded-lg">
-              <Link
-                to={'/'}
+              <button
+                onClick={handleLogin}
                 type="button"
                 className="bg-first text-third w-full py-2.5  rounded-lg text-sm shadow-xl hover:shadow-2xl font-semibold text-center inline-block"
               >
-                <span className="inline-block mr-2 ">Login</span>
+                <span className="inline-block mr-2">Login</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -62,13 +79,13 @@ export default function Login() {
                   className="w-4 h-4 inline-block"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="M17 8l4 4m0 0l-4 4m4-4H3"
                   />
                 </svg>
-              </Link>
+              </button>
             </div>
           </div>
         </div>
