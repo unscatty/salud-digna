@@ -24,62 +24,65 @@ ChartJS.register(
 const labels = ['Lun', 'Mar', 'Miér', 'Jue', 'Vier', 'Sáb', 'Dom'];
 
 export default function LinePasos({ height, daysData }) {
-  const offsetRatio = 0.15
-  
-  const options = useMemo(() => ({
-    mantainAspectRatio: true,
-    plugins: {
-      title: {
-        display: false,
-      },
-      legend: {
-        display: false,
-      },
-    },
-    responsive: true,
-    scales: {
-      x: {
-        stacked: true,
-        grid: {
+  const offsetRatio = 0.15;
+
+  const options = useMemo(
+    () => ({
+      mantainAspectRatio: true,
+      plugins: {
+        title: {
           display: false,
-          drawTicks: false,
-          tickBorderDashOffset: 50,
         },
-        ticks: {
+        legend: {
+          display: false,
+        },
+      },
+      responsive: true,
+      scales: {
+        x: {
+          stacked: true,
+          grid: {
+            display: false,
+            drawTicks: false,
+            tickBorderDashOffset: 50,
+          },
+          ticks: {
+            display: true,
+            padding: 0,
+            font: {
+              size: 8,
+            },
+          },
+          border: {
+            display: false,
+          },
+        },
+        y: {
+          stacked: false,
+          grid: {
+            display: false,
+          },
           display: true,
-          padding: 0,
-          font: {
-            size: 8,
+          min: Math.round(Math.min(...daysData) * (1 - offsetRatio)),
+          max: Math.round(Math.max(...daysData) * (1 + offsetRatio)),
+          position: 'right',
+          ticks: {
+            font: {
+              size: 8,
+            },
+            padding: 0,
           },
         },
-        border: {
-          display: false,
+      },
+      layout: {
+        padding: {
+          left: 10,
+          right: 0,
         },
       },
-      y: {
-        stacked: false,
-        grid: {
-          display: false,
-        },
-        display: true,
-        min: Math.round(Math.min(...daysData) * (1 - offsetRatio)),
-        max: Math.round(Math.max(...daysData) * (1 + offsetRatio)),
-        position: 'right',
-        ticks: {
-          font: {
-            size: 8,
-          },
-          padding: 0
-        }
-      },
-    },
-    layout: {
-      padding: {
-        left: 10,
-        right: 0,
-      },
-    },
-  }), [daysData]);
+    }),
+    [daysData],
+  );
 
   const data = useMemo(
     () => ({

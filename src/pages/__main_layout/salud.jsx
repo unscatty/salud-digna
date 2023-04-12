@@ -16,5 +16,5 @@ export default function Salud() {
       </div>
       <div className="w-full mt-2 bg-gray-6 aspect-[1] rounded-2xl"></div>
     </div>
-  )
+  );
 }

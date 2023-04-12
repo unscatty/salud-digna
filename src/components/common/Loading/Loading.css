@@ -1,0 +1,90 @@
+@import url('//fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,800&display=swap');
+.main-container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-25px, -50px)
+}
+.main {
+  position: relative;
+  margin: auto;
+}
+.theSmiley {
+    width: 50px;
+    height: 50px;
+
+ }
+
+.orange img {
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+.item {
+    animation: spinAround 15s linear infinite;
+    height: 20px;
+    width: 50px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.main > * > img {
+    animation: rotate 5s linear infinite;
+}
+
+.creating-container{   
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-30%,-19%);
+}
+.cargando{
+    width: 200px;
+    height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: 0 auto; 
+    animation: blink 2s linear infinite;
+    animation-direction: alternate;
+}
+.texto-cargando{ 
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  color: #fff;
+  padding-top:10px;
+}
+.cargando span{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+    
+}
+
+@keyframes spinAround {
+    from {
+      transform: rotate(0deg) translate(130px) scale(.9);
+    }
+    to {
+      transform: rotate(360deg) translate(130px) scale(.8);
+    }
+}
+@keyframes blink {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+}

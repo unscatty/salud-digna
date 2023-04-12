@@ -1,11 +1,10 @@
-
 // Compare this snippet from src/components/progreso/graficas/GraficaSueno.jsx:
-export default function GraficaSueno({height} = {height: 300}) {
-  const daysData = [7, 6, 7, 6.5, 5.5, 8, 7.9]
+export default function GraficaSueno({ height } = { height: 300 }) {
+  const daysData = [7, 6, 7, 6.5, 5.5, 8, 7.9];
 
   // Compute average from daysData
-  const average = daysData.reduce((acc, num) => acc + num, 0) / daysData.length
-  
+  const average = daysData.reduce((acc, num) => acc + num, 0) / daysData.length;
+
   return (
     <div className="container">
       <div className="inline-flex gap-1 items-center justify-start">

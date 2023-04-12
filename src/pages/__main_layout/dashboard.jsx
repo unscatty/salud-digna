@@ -3,9 +3,8 @@ export default function Dashboard() {
     <>
       <div className="flex text-red">dashboard</div>
       <button>
-
-      <Link to={'/'}>Home</Link>
+        <Link to={'/'}>Home</Link>
       </button>
     </>
-  )
+  );
 }

@@ -27,6 +27,7 @@
   "devDependencies": {
     "@iconify-json/fa-solid": "^1.1.4",
     "@iconify-json/fa6-solid": "^1.1.13",
+    "@iconify-json/healthicons": "^1.1.7",
     "@iconify-json/heroicons": "^1.1.10",
     "@iconify-json/ion": "^1.1.9",
     "@iconify-json/mdi": "^1.1.50",

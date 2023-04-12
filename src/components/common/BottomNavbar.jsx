@@ -1,4 +1,4 @@
-import { NavigationItems } from '~/constants/navigation';
+import { MainNavigationItems } from '~/constants/main-navigation';
 
 export default function BottomNavbar() {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -30,7 +30,7 @@ export default function BottomNavbar() {
         } fixed bottom-0 m-auto my-5 z-0 w-full px-global`}
       >
         <div className="inline-flex rounded-full justify-evenly bg-white h-14 bg-black-500 w-full shadow-[0px_5px_2px_0_rgba(0,0,0,0.35)]">
-          {NavigationItems.map((navItem) => {
+          {MainNavigationItems.map((navItem) => {
             return (
               <NavLink
                 key={navItem.name}

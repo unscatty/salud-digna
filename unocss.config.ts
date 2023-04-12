@@ -11,7 +11,8 @@ import {
 } from 'unocss';
 import presetAutoprefixer from 'unocss-preset-autoprefixer';
 
-import { NavigationItems } from './src/constants/navigation';
+import { MainNavigationItems } from './src/constants/main-navigation';
+import { EstiloDeVidaTabs } from './src/constants/estilo-de-vida/estilo-de-vida-tabs';
 
 export default defineConfig({
   theme: {
@@ -20,6 +21,7 @@ export default defineConfig({
       second: '#C2E3C1',
       third: '#FFF',
       fourth: '#12895A',
+      fifth: '#5E9780',
       iconActive: '#68a961',
       iconInactive: '#868589',
     },
@@ -27,7 +29,8 @@ export default defineConfig({
   shortcuts: [
     ['px-global', 'px-6'],
     ['mx-global', 'mx-6'],
-    ['card', 'bg-white shadow-lg rounded-2xl p4']
+    ['card', 'bg-second shadow-lg rounded-2xl p-4'],
+    ['card-white', 'bg-white shadow-lg rounded-2xl p-4'],
   ],
   presets: [
     presetAttributify(),
@@ -53,6 +56,7 @@ export default defineConfig({
     'prose-sm',
     'm-auto',
     'text-left',
-    ...NavigationItems.map((item) => item.iconClass),
+    ...MainNavigationItems.map((item) => item.iconClass),
+    ...EstiloDeVidaTabs.map((item) => item.iconClass),
   ],
 });

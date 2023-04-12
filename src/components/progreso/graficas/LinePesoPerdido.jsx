@@ -46,8 +46,11 @@ export default function LinePesoPerdido(
     return rotateArrayTo(labels, month);
   }, [month]);
 
-  const max = useMemo(() => Math.round(Math.max(...monthsData) * 1.05), [monthsData])
-  
+  const max = useMemo(
+    () => Math.round(Math.max(...monthsData) * 1.05),
+    [monthsData],
+  );
+
   const options = useMemo(
     () => ({
       mantainAspectRatio: true,
@@ -92,7 +95,7 @@ export default function LinePesoPerdido(
           },
           display: true,
           min: goal,
-          max
+          max,
         },
       },
       layout: {

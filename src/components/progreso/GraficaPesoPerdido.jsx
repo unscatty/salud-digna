@@ -9,7 +9,12 @@ export default function GraficaPesoPerdido({ height, month }) {
         <i className="i-mdi:scale text-green-5" />
         <p className="font-500">Peso</p>
       </div>
-      <LinePesoPerdido daysData={daysData} height={height} month={month} goal={65}/>
+      <LinePesoPerdido
+        daysData={daysData}
+        height={height}
+        month={month}
+        goal={65}
+      />
       <div className="mt-4">
         <p className="font-bold">{totalLostWeight.toFixed(1)} kg</p>
         <p className="font-200 text-2.5 -mt-0.75">Peso perdido hasta hoy</p>

@@ -1,7 +1,7 @@
-import { NavigationItems } from '~/constants/navigation';
-
+import { Link, matchPath } from 'react-router-dom';
+import { MainNavigationItems } from '~/constants/main-navigation';
 // The navigation items are mapped to a new array of objects, to assign them a header component.
-const HeaderItems = NavigationItems.map((navItem) => {
+const HeaderItems = MainNavigationItems.map((navItem) => {
   // For home page, we want to render a custom header
   if (navItem.path === '/') {
     return {
@@ -45,9 +45,18 @@ export default function Header() {
 
   // Get header component that matches current path
   const activeHeader = useMemo(() => {
-    const activeItem = HeaderItems.find((item) => item.path === pathname);
+    if (pathname === '/') {
+      return HomeHeader;
+    }
 
-    return activeItem.headerComponent ?? HomeHeader;
+    const activeItem = HeaderItems.filter((item) => item.path !== '/').find(
+      (item) => {
+        const match = matchPath(`${item.path}/*`, pathname);
+        return match !== null;
+      },
+    );
+
+    return activeItem?.headerComponent ?? HomeHeader;
   }, [pathname]);
 
   const headerRef = useRef(null);
@@ -69,10 +78,9 @@ export default function Header() {
       }
     };
   }, [headerRef]);
-
   return (
     <div
-      className={`sticky -top-4 flex pt-5 pb-1 justify-between text-black px-global bg-first z-999 ${
+      className={`sticky -top-4 flex py-5 justify-between text-black px-global bg-first z-999 ${
         isSticky ? 'shadow-[0px_5px_10px_0_rgba(0,0,0,0.35)]' : ''
       }`}
       ref={headerRef}
@@ -86,9 +94,11 @@ export default function Header() {
             <span className="relative inline-flex rounded-full h-2 w-2 bg-sky-500" />
           </span>
         </div>
-        <div className="inline-flex justify-center items-center bg-third aspect-square rounded rounded-xl h-10 shadow-md">
-          <i className="i-heroicons:user-20-solid text-fourth w-6 h-6 aspect-square" />
-        </div>
+        <Link to="perfil">
+          <div className="inline-flex justify-center items-center bg-third aspect-square rounded rounded-xl h-10 shadow-md">
+            <i className="i-heroicons:user-20-solid text-fourth w-6 h-6 aspect-square" />
+          </div>
+        </Link>
       </div>
     </div>
   );
