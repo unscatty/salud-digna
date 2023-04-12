@@ -5,7 +5,7 @@ import Unocss from 'unocss/vite';
 import AutoImport from 'unplugin-auto-import/vite';
 import { defineConfig } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
-import Pages from 'vite-plugin-pages'
+import Pages from 'vite-plugin-pages';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -24,12 +24,7 @@ export default defineConfig({
       include: [
         /\.[tj]sx?$/, // .ts, .tsx, .js, .jsx
       ],
-      imports: [
-        'react',
-        'react-router-dom',
-        'react-i18next',
-        'ahooks'
-      ],
+      imports: ['react', 'react-router-dom', 'react-i18next', 'ahooks'],
       dts: './src/auto-imports.d.ts',
       dirs: ['src/components/**/*', 'src/hooks'],
       defaultExportByFilename: true,
@@ -43,8 +38,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'safari-pinned-tab.svg'],
       manifest: {
-        name: 'Nutri Facil',
-        short_name: 'Nutri Facil',
+        name: 'Salud Digna',
+        short_name: 'Salud Digna',
         theme_color: '#ffffff',
         icons: [
           {
@@ -67,7 +62,7 @@ export default defineConfig({
       },
     }),
     Pages({
-      routeStyle: 'remix'
-    })
+      routeStyle: 'remix',
+    }),
   ],
-})
+});
