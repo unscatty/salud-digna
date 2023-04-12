@@ -1,6 +1,7 @@
 import { Suspense } from 'react'
 import NProgress from 'nprogress'
 import { useRoutes } from 'react-router-dom'
+import { redirect } from 'react-router-dom'
 
 // Get all generated routes
 import routes from '~react-pages'
@@ -15,11 +16,14 @@ const Progress = () => {
     };
   });
 
+  
+
   return <></>;
 };
 
+
 function App() {
-  return (
+return (
     <Suspense fallback={<Progress />}>
       {useRoutes(routes)}
     </Suspense>

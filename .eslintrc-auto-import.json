@@ -1,7 +1,5 @@
 {
   "globals": {
-    "AnalisisSalud": true,
-    "AnalisisSaludPersonales": true,
     "BarSueno": true,
     "BottomNavbar": true,
     "BottomNavbarNutriologo": true,
@@ -57,7 +55,6 @@
     "PacientesDash": true,
     "PlanDelDia": true,
     "PlanDia": true,
-    "PlanesPersona": true,
     "Platillo": true,
     "PlatilloPlan": true,
     "PublicacionNew": true,
@@ -69,7 +66,6 @@
     "Recompensas": true,
     "Registro": true,
     "RegistroItem": true,
-    "ResultadoAnalisis": true,
     "Route": true,
     "Routes": true,
     "RutaDeHabitos": true,
@@ -78,7 +74,6 @@
     "SaludMainCard": true,
     "SaludMainContents": true,
     "SaludNutriologo": true,
-    "analisis": true,
     "createRef": true,
     "forwardRef": true,
     "lazy": true,
