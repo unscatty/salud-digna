@@ -1,3 +1,4 @@
+import LoginWithGoogle from '~/db/LoginWithGoogle';
 import logo from '/assets/logo2.svg';
 // import { redirect } from 'react-router-dom';
 
@@ -86,6 +87,9 @@ export default function Login() {
                   />
                 </svg>
               </button>
+            </div>
+            <div className="bg-white mt-4 rounded-lg">
+              <LoginWithGoogle />
             </div>
           </div>
         </div>

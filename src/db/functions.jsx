@@ -1,4 +1,4 @@
-import {db} from './firebase-config.js';
+import {db} from './firebase-config.jsx';
 import { collection, getDocs, addDoc, doc, setDoc, getDoc} from 'firebase/firestore';
 
 const userCollectionRef = collection(db, 'pacientes');
