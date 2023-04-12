@@ -2,13 +2,13 @@ import BottomNavbar from '~/components/common/BottomNavbar';
 export default function Perfil() {
   return (
     <>
-      <div className="h-15 w-100% flex items-center ml-6 my-3">
-        <div className="w-25 h-7 inline-flex justify-center items-center bg-transparent aspect-square rounded rounded-xl gap-3">
+      <div className="h-15 w-100% flex items-center">
+        <div className="w-30 h-7 inline-flex justify-center items-center bg-transparent aspect-square rounded rounded-xl gap-3 mt-7 ml-3">
           <i className="i-heroicons:user-20-solid text-light w-6 h-6 aspect-square" />
           <p>Perfil</p>
         </div>
       </div>
-      <div className="flex justify-center h-55% items-center flex-col space-y-7">
+      <div className="flex justify-center h-70% items-center flex-col space-y-7">
         <div className="w-20 h-20 inline-flex justify-center items-center bg-third aspect-square rounded rounded-2xl shadow-md">
           <i className="i-heroicons:user-20-solid text-fourth w-10 h-10 aspect-square" />
         </div>

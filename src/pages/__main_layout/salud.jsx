@@ -1,20 +1,37 @@
+import { Tab } from '@headlessui/react';
+import { Fragment } from 'react';
+import { SaludMainContents } from '~/components/salud/SaludMainContents';
+
 export default function Salud() {
   return (
     <div className="container">
-      <div className="w-full mt-2 bg-gray-6 aspect-[2] rounded-2xl"></div>
-      <div className="grid grid-cols-3 gap-3.5 mt-4 mb-2">
-        {Array(3)
-          .fill()
-          .map((_, index) => (
-            <div className="flex flex-col gap-2">
-              <div
-                key={index}
-                className="rounded-2xl aspect-[3] bg-gray-5"
-              ></div>
-            </div>
-          ))}
+      <div className="card p-3">
+        <Calendar />
       </div>
-      <div className="w-full mt-2 bg-gray-6 aspect-[1] rounded-2xl"></div>
+      <Tab.Group defaultIndex={0}>
+        <Tab.List className="grid grid-cols-3 gap-3.5 my-3">
+          {SaludMainContents.map((tab) => (
+            <Tab as={Fragment} key={tab.name}>
+              {({ selected }) => (
+                <button
+                  className={`${
+                    selected ? 'bg-third' : 'bg-second'
+                  } rounded-full p-1 text-center text-sm font-bold text-fourth focus:outline-none`}
+                >
+                  {tab.name}
+                </button>
+              )}
+            </Tab>
+          ))}
+        </Tab.List>
+        <Tab.Panels className="container">
+          {SaludMainContents.map((tab) => (
+            <Tab.Panel key={tab.name}>
+              <tab.content tab={tab} />
+            </Tab.Panel>
+          ))}
+        </Tab.Panels>
+      </Tab.Group>
     </div>
   );
 }

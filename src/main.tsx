@@ -1,12 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './index.css'
-import 'virtual:uno.css'
 import App from './App'
 import { Inspector, InspectParams } from 'react-dev-inspector'
 import { BrowserRouter as Router } from 'react-router-dom'
 
 import '@unocss/reset/tailwind.css'
+import 'virtual:uno.css'
+import './index.css'
 
 const isDev = process.env.NODE_ENV === 'development'
 const inspectorHotKeys = (import.meta.env.VITE_DEV_INSPECTOR_HOTKEYS as string)?.split(' ') ?? ['ctrl', 'alt', 'i']

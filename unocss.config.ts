@@ -13,6 +13,7 @@ import presetAutoprefixer from 'unocss-preset-autoprefixer';
 
 import { MainNavigationItems } from './src/constants/main-navigation';
 import { EstiloDeVidaTabs } from './src/constants/estilo-de-vida/estilo-de-vida-tabs';
+import { SaludTabs } from './src/constants/salud/salud-tabs';
 
 export default defineConfig({
   theme: {
@@ -30,7 +31,7 @@ export default defineConfig({
     ['px-global', 'px-6'],
     ['mx-global', 'mx-6'],
     ['card', 'bg-third shadow-lg rounded-2xl p-4'],
-    ['card-white', 'bg-white shadow-lg rounded-2xl p-4'],
+    ['card-second', 'bg-second shadow-lg rounded-2xl p-4'],
   ],
   presets: [
     presetAttributify(),
@@ -58,5 +59,6 @@ export default defineConfig({
     'text-left',
     ...MainNavigationItems.map((item) => item.iconClass),
     ...EstiloDeVidaTabs.map((item) => item.iconClass),
+    ...SaludTabs.map((item) => item.iconClass),
   ],
 });
