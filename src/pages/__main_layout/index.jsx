@@ -1,18 +1,23 @@
 import ComidaDeHoy from '~/components/home/comida/ComidaDeHoy';
 import EjercicioDelDia from '~/components/home/ejercicio/EjercicioDelDia';
 import Estadisticas from '~/components/home/estadisticas/Estadisticas';
-
-// import { redirect } from 'react-router-dom';
+import { getAuth, onAuthStateChanged } from 'firebase/auth';
+import { initializeApp } from 'firebase/app';
+import { firebaseConfig } from '~/db/firebase-config.jsx';
 
 export default function index() {
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+
   useEffect(() => {
     const isLogged = localStorage.getItem('isLogged');
 
-    console.log({ isLogged });
-
-    if (!isLogged || isLogged === 'false') {
-      window.location.href = '/login';
-    }
+    onAuthStateChanged(auth, (user) => {
+      if (!user && (!isLogged || isLogged === 'false')) {
+        console.log('redirecting');
+        window.location.href = '/login';
+      }
+    });
   }, []);
 
   return (

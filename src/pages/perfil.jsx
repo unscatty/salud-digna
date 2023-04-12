@@ -1,7 +1,24 @@
 import BottomNavbar from '~/components/common/BottomNavbar';
+import { getAuth, onAuthStateChanged, signOut } from 'firebase/auth';
+import { initializeApp } from 'firebase/app';
+import { firebaseConfig } from '~/db/firebase-config.jsx';
+
 export default function Perfil() {
-  const logout = () => {
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      setUser(user);
+    });
+  }, []);
+
+  const logout = async () => {
     localStorage.setItem('isLogged', null);
+
+    await signOut(auth);
 
     window.location.href = '/login';
   };

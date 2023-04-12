@@ -4,6 +4,7 @@ import logo from '/assets/logo2.svg';
 
 export default function Login() {
   const [selected, setSelected] = useState('cliente');
+
   useEffect(() => {
     const isLogged = localStorage.getItem('isLogged');
 
@@ -17,7 +18,7 @@ export default function Login() {
   const handleLogin = () => {
     localStorage.setItem('isLogged', true);
 
-    window.location.href = '/';
+    window.location.href = selected === 'cliente' ? '/' : '/nutriologo';
   };
 
   return (
@@ -97,8 +98,8 @@ export default function Login() {
               </label>
             </div>
             <div className="bg-white mt-10 rounded-lg ">
-              <Link
-                to={selected === 'cliente' ? '/' : '/nutriologo'}
+              <button
+                onClick={handleLogin}
                 type="button"
                 className="bg-first text-third w-full py-2.5  rounded-lg text-sm shadow-xl hover:shadow-2xl font-semibold text-center inline-block"
               >
@@ -117,10 +118,12 @@ export default function Login() {
                     d="M17 8l4 4m0 0l-4 4m4-4H3"
                   />
                 </svg>
-              </Link>
+              </button>
             </div>
             <div className="bg-white mt-4 rounded-lg">
-              <LoginWithGoogle />
+              <LoginWithGoogle
+                redirectTo={selected === 'cliente' ? '/' : '/nutriologo'}
+              />
             </div>
           </div>
         </div>

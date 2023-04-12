@@ -1,5 +1,9 @@
 import { Link, matchPath } from 'react-router-dom';
 import { MainNavigationItems } from '~/constants/main-navigation';
+import { getAuth, onAuthStateChanged } from 'firebase/auth';
+import { initializeApp } from 'firebase/app';
+import { firebaseConfig } from '~/db/firebase-config.jsx';
+
 // The navigation items are mapped to a new array of objects, to assign them a header component.
 const HeaderItems = MainNavigationItems.map((navItem) => {
   // For home page, we want to render a custom header
@@ -78,6 +82,17 @@ export default function Header() {
       }
     };
   }, [headerRef]);
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      setUser(user);
+    });
+  }, []);
+
   return (
     <div
       className={`sticky -top-[.1] flex py-5 justify-between text-black px-global bg-first z-999 ${
@@ -95,8 +110,12 @@ export default function Header() {
           </span>
         </div>
         <Link to="perfil">
-          <div className="inline-flex justify-center items-center bg-third aspect-square rounded rounded-xl h-10 shadow-md">
-            <i className="i-heroicons:user-20-solid text-fourth w-6 h-6 aspect-square" />
+          <div className="inline-flex justify-center items-center bg-third aspect-square rounded rounded-full h-10 shadow-md">
+            {user ? (
+              <img className="rounded-full" src={user.photoURL}></img>
+            ) : (
+              <i className="i-heroicons:user-20-solid text-fourth w-6 h-6 aspect-square" />
+            )}
           </div>
         </Link>
       </div>
