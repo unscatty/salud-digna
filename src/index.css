@@ -15,6 +15,7 @@
   --inactive-icon-color: #868589;
   --active-icon-color: #68a961;
   --background-color: #74b79d;
+  /* --background-color: #1f7f66; */
 
   background-color: var(--background-color);
 }

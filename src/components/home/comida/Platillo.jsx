@@ -18,7 +18,7 @@ export default function Platillo(props) {
     <div
       className={`platillo card bg-${
         colors[props.state].background
-      } grid grid-rows-[auto_auto_auto] gap-2`}
+      } grid grid-rows-[auto_auto_auto] gap-2 position-relative`}
     >
       <div className="platillo_header text-xs text-center">
         <p className={`tiempo font-bold text-${colors[props.state].tiempo}`}>
@@ -40,6 +40,11 @@ export default function Platillo(props) {
       >
         {props.descripcion}
       </div>
+      {props.state === 'active' && (
+        <span class="position-absolute left-50% translate-[-50%] translate-y-[-50%] text-[8px]  font-semibold inline-block  px-2 uppercase rounded-full text-fifth bg-second uppercase last:mr-0 mr-1 font-bold drop-shadow-md">
+          HORA
+        </span>
+      )}
     </div>
   );
 }
