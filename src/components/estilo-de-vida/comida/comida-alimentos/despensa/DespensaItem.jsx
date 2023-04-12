@@ -43,7 +43,7 @@ export default function DespensaItem(props) {
         >
           -
         </span>
-        <p className=" ">{props.comida}</p>
+        <p className="text-3.5">{props.comida}</p>
       </div>
     </div>
   );

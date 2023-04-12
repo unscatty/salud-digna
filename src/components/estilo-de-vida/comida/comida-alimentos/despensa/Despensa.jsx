@@ -1,6 +1,87 @@
 import DespensaItem from './DespensaItem';
 
+const __despensaItems = [
+  {
+    comida: 'Yogurt',
+    icon: <img src="/assets/yogurt.png" className="w-100 "></img>,
+  },
+  {
+    comida: 'Leche',
+    icon: <img src="/assets/yogurt.png" className="w-100"></img>,
+  },
+  {
+    comida: 'Arroz',
+    icon: <img src="/assets/yogurt.png" className="w-100"></img>,
+  },
+  {
+    comida: 'Carne',
+    icon: <img src="/assets/yogurt.png" className="w-100"></img>,
+  },
+  {
+    comida: 'Pan blanco',
+    icon: <img src="/assets/yogurt.png" className="w-100"></img>,
+  },
+  {
+    comida: 'Frijol',
+    icon: <img src="/assets/yogurt.png" className="w-100"></img>,
+  },
+  {
+    comida: 'Galletas',
+    icon: <img src="/assets/yogurt.png" className="w-100"></img>,
+  },
+  {
+    comida: 'Huevos',
+    icon: <img src="/assets/yogurt.png" className="w-100"></img>,
+  },
+  {
+    comida: 'Pasta',
+    icon: <img src="/assets/yogurt.png" className="w-100"></img>,
+  },
+  {
+    comida: 'Papa',
+    icon: <img src="/assets/yogurt.png" className="w-100"></img>,
+  },
+  {
+    comida: 'Pescado',
+    icon: <img src="/assets/yogurt.png" className="w-100"></img>,
+  },
+  {
+    comida: 'Pollo',
+    icon: <img src="/assets/yogurt.png" className="w-100"></img>,
+  },
+  {
+    comida: 'Queso',
+    icon: <img src="/assets/yogurt.png" className="w-100"></img>,
+  },
+  {
+    comida: 'Tortillas',
+    icon: <img src="/assets/yogurt.png" className="w-100"></img>,
+  },
+  {
+    comida: 'Verduras',
+    icon: <img src="/assets/yogurt.png" className="w-100"></img>,
+  },
+];
+
+function findMatchingItems(query, list) {
+  return list.filter((item) =>
+    item.comida.toLowerCase().includes(query.toLowerCase()),
+  );
+}
+
 export default function Despensa() {
+  const [query, setQuery] = useState('');
+  const [despensaItems, setDespensaItems] = useState(__despensaItems);
+
+  function handleInputChange(event) {
+    setQuery(event.target.value);
+  }
+
+  const matchingItems = useMemo(
+    () => findMatchingItems(query, despensaItems).slice(0, 6),
+    [query],
+  );
+
   return (
     <div className="racha-container grid grid-cols-[1fr_auto] gap-3 ">
       <div className="racha-container_days">
@@ -34,6 +115,8 @@ export default function Despensa() {
             <input
               type="text"
               id="simple-search"
+              value={query}
+              onChange={handleInputChange}
               className="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-lg focus:ring-fifth focus:border-fifth- block w-full pl-10 p-2  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-fifth- dark:focus:border-fifth-"
               placeholder="Buscar alimento"
               required
@@ -50,30 +133,9 @@ export default function Despensa() {
         </div>
 
         <div className="grid grid-cols-3 gap-2 pt-2">
-          <DespensaItem
-            comida="Yogurt"
-            icon={<img src="/assets/yogurt.png" className="w-100 "></img>}
-          />
-          <DespensaItem
-            comida="Yogurt"
-            icon={<img src="/assets/yogurt.png" className="w-100"></img>}
-          />
-          <DespensaItem
-            comida="Yogurt"
-            icon={<img src="/assets/yogurt.png" className="w-100"></img>}
-          />
-          <DespensaItem
-            comida="Yogurt"
-            icon={<img src="/assets/yogurt.png" className="w-100"></img>}
-          />
-          <DespensaItem
-            comida="Yogurt"
-            icon={<img src="/assets/yogurt.png" className="w-100"></img>}
-          />
-          <DespensaItem
-            comida="Yogurt"
-            icon={<img src="/assets/yogurt.png" className="w-100"></img>}
-          />
+          {matchingItems.map((item) => (
+            <DespensaItem comida={item.comida} icon={item.icon} />
+          ))}
         </div>
       </div>
     </div>
