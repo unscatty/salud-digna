@@ -11,10 +11,13 @@ import './index.css'
 const isDev = process.env.NODE_ENV === 'development'
 const inspectorHotKeys = (import.meta.env.VITE_DEV_INSPECTOR_HOTKEYS as string)?.split(' ') ?? ['ctrl', 'alt', 'i']
 
+
+
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <Router>
       <App />
+   
     </Router>
 
     {isDev && (
