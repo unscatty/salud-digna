@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import RegistroItem from './RegistroItem';
+=======
+import RegistroItem from "./RegistroItem";
+>>>>>>> 3b720c3f24502aa28a601f0a699b6b369c6e28fc
 
 export default function Registro() {
   return (
@@ -22,12 +26,17 @@ export default function Registro() {
           <PlanDia day={16} month={'ABR'} state="inactive" />
           <PlanDia day={16} month={'ABR'} state="inactive" />
         </div>
+<<<<<<< HEAD
         <div className="bg-fifth p-2 rounded mb-2">
           <p className="text-xs text-center font-semibold text-third">
             ¡Ingresa que comiste el dia de hoy!
           </p>
         </div>
         <div className="grid grid-cols-3 gap-2 pb-2">
+=======
+
+        <div className="grid grid-cols-3 gap-2 pb-4">
+>>>>>>> 3b720c3f24502aa28a601f0a699b6b369c6e28fc
           <div className="grid grid-rows-[1fr_auto]">
             <PlatilloPlan
               tiempo="DESAYUNO"
@@ -36,7 +45,11 @@ export default function Registro() {
               descripcion="Yogurt con arandanos"
               state="inactive"
             />
+<<<<<<< HEAD
             <div className="flex justify-center font-bold align-items p-1 bg-first text-third rounded mt-2 text-xs">
+=======
+            <div className="flex justify-center align-items p-1 bg-iconActive text-third rounded mt-2 text-xs">
+>>>>>>> 3b720c3f24502aa28a601f0a699b6b369c6e28fc
               Agregar
             </div>
           </div>
@@ -48,7 +61,11 @@ export default function Registro() {
               descripcion="Colifor y manzana"
               state="inactive"
             />
+<<<<<<< HEAD
             <div className="flex justify-center font-bold align-items p-1 bg-first text-third rounded mt-2 text-xs">
+=======
+            <div className="flex justify-center align-items p-1 bg-iconActive text-third rounded mt-2 text-xs">
+>>>>>>> 3b720c3f24502aa28a601f0a699b6b369c6e28fc
               Agregar
             </div>
           </div>
@@ -61,12 +78,17 @@ export default function Registro() {
               descripcion="Frutas con almendras"
               state="inactive"
             />
+<<<<<<< HEAD
             <div className="flex justify-center font-bold align-items p-1 bg-first text-third rounded mt-2 text-xs">
+=======
+            <div className="flex justify-center align-items p-1 bg-iconActive text-third rounded mt-2 text-xs">
+>>>>>>> 3b720c3f24502aa28a601f0a699b6b369c6e28fc
               Agregar
             </div>
           </div>
         </div>
 
+<<<<<<< HEAD
         <div class="flex items-center">
           <label for="simple-search" class="sr-only">
             Buscar alimento
@@ -105,6 +127,15 @@ export default function Registro() {
           </button>
         </div>
         <div className="pt-2">
+=======
+        <div className="bg-fifth p-2 rounded mb-2">
+          <p className="text-xs text-center font-semibold text-third">
+            ¡Ingresa que comiste el dia de hoy!
+          </p>
+        </div>
+
+        <div>
+>>>>>>> 3b720c3f24502aa28a601f0a699b6b369c6e28fc
           <RegistroItem />
         </div>
       </div>

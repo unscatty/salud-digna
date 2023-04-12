@@ -47,8 +47,13 @@ export default function Lista() {
             type="submit"
             class="h-full p-2 text-sm font-medium text-white bg-fifth rounded-lg border border-fifth hover:bg-fifth hover:border-fifth focus:outline-none focus:ring-2 focus:ring-offset-2 focus:fifth text-xs ml-2"
           >
+<<<<<<< HEAD
             Agregar
             <span class="sr-only">Agregar</span>
+=======
+            Add
+            <span class="sr-only">Add</span>
+>>>>>>> 3b720c3f24502aa28a601f0a699b6b369c6e28fc
           </button>
         </div>
 
