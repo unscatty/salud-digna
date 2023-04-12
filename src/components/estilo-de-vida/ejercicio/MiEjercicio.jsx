@@ -5,10 +5,7 @@ export default function MiEjercicio() {
         <ComponentHeader
           title="Mi Ejercicio"
           icon={
-            <img
-              src="/src/assets/icons/racha_arrow.svg"
-              className="w-3 h-3"
-            ></img>
+            <img src="/assets/icons/racha_arrow.svg" className="w-3 h-3"></img>
           }
         />
       </div>

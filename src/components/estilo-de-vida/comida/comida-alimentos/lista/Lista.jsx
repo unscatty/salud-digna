@@ -1,4 +1,4 @@
-import ListaItem from "./ListaItem";
+import ListaItem from './ListaItem';
 
 export default function Lista() {
   return (
@@ -7,10 +7,7 @@ export default function Lista() {
         <ComponentHeader
           title="Lista"
           icon={
-            <img
-              src="/src/assets/icons/racha_arrow.svg"
-              className="w-3 h-3"
-            ></img>
+            <img src="/assets/icons/racha_arrow.svg" className="w-3 h-3"></img>
           }
         />
 
@@ -42,7 +39,7 @@ export default function Lista() {
               required
             />
           </div>
-          
+
           <button
             type="submit"
             className="h-full p-2 text-sm font-medium text-white bg-fifth rounded-lg border border-fifth hover:bg-fifth hover:border-fifth focus:outline-none focus:ring-2 focus:ring-offset-2 focus:fifth text-xs ml-2"

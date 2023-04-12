@@ -16,7 +16,7 @@ export default function MalosHabitos() {
             title="Malos Habitos"
             icon={
               <img
-                src="/src/assets/icons/racha_arrow.svg"
+                src="/assets/icons/racha_arrow.svg"
                 className="w-3 h-3"
               ></img>
             }

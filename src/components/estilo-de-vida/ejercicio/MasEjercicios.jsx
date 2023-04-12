@@ -5,25 +5,22 @@ export default function MasEjercicios() {
         <ComponentHeader
           title="Mas Ejercicios"
           icon={
-            <img
-              src="/src/assets/icons/racha_arrow.svg"
-              className="w-3 h-3"
-            ></img>
+            <img src="/assets/icons/racha_arrow.svg" className="w-3 h-3"></img>
           }
         />
       </div>
       <div className="flex gap-3">
-          <EjercicioCard
-            ejercicio="Caminata"
-            tiempo="30 minutos"
-            image={'/src/assets/caminata.svg'}
-          />
-          <EjercicioCard
-            ejercicio="Estiramiento"
-            tiempo="15 minutos"
-            image={'/src/assets/estiramiento.svg'}
-          />
-        </div>
+        <EjercicioCard
+          ejercicio="Caminata"
+          tiempo="30 minutos"
+          image={'/assets/caminata.svg'}
+        />
+        <EjercicioCard
+          ejercicio="Estiramiento"
+          tiempo="15 minutos"
+          image={'/assets/estiramiento.svg'}
+        />
+      </div>
     </div>
   );
 }

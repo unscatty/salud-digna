@@ -6,10 +6,7 @@ export default function Publico(props) {
       <ComponentHeader
         title="Publico"
         icon={
-          <img
-            src="/src/assets/icons/racha_arrow.svg"
-            className="w-3 h-3"
-          ></img>
+          <img src="/assets/icons/racha_arrow.svg" className="w-3 h-3"></img>
         }
       />
       <div className="flex gap-2">
@@ -18,10 +15,8 @@ export default function Publico(props) {
             ¡Comparte tu progreso con los demas!
           </p>
         </div>
-        <div className='bg-white p-2 flex items-center rounded text-xs text-center'>
-          <p className="  ">
-            Crear Post
-          </p>
+        <div className="bg-white p-2 flex items-center rounded text-xs text-center">
+          <p className="  ">Crear Post</p>
         </div>
       </div>
 
@@ -30,7 +25,7 @@ export default function Publico(props) {
           nombre="Juan Pablo Muñiz"
           date="13 ABR 2023"
           descripcion="Comer saludable el dificil, no siempre tiene la motivación. Lo que a mi me motiva el ver mi yo del pasado."
-          image="/src/assets/cambio_fisico.jpg"
+          image="/assets/cambio_fisico.jpg"
         />
       </div>
     </div>

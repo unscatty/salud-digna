@@ -10,7 +10,7 @@ export default function PublicacionNew(props) {
       <div className="card-header grid  grid-rows-2 grid-cols-[auto_1fr_auto]">
         <div className="card-profile row-span-2 mr-2">
           <img
-            src="/src/assets/profile.jpg"
+            src="/assets/profile.jpg"
             alt=""
             className="h-8 w-8 rounded-full"
           />
@@ -19,7 +19,7 @@ export default function PublicacionNew(props) {
           <p className="text-xs font-semibold">{props.nombre}</p>
         </div>
         <div className="card-date text-gray row-start-2 col-start-2 text-[9px]  ">
-        {props.date}
+          {props.date}
         </div>
         <div className="card-options">
           <svg
@@ -34,15 +34,10 @@ export default function PublicacionNew(props) {
 
       <div className="card-body">
         <div className="card-body-description text-xs my-2">
-        {props.descripcion}
+          {props.descripcion}
         </div>
         <div className="card-body-image ">
-          <img
-            src={props.image}
-            className="rounded-lg"
-            alt=""
-            href=""
-          />
+          <img src={props.image} className="rounded-lg" alt="" href="" />
         </div>
       </div>
 
@@ -90,7 +85,7 @@ export default function PublicacionNew(props) {
           <div className="comentario grid grid-cols-[auto_auto_auto_1fr] items-center">
             <div className="card-profile row-span-1 mr-2">
               <img
-                src="/src/assets/profile.jpg"
+                src="/assets/profile.jpg"
                 alt=""
                 className="h-4 w-4 rounded-full"
               />

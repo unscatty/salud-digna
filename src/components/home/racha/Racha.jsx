@@ -5,10 +5,7 @@ export default function Racha() {
         <ComponentHeader
           title="Racha"
           icon={
-            <img
-              src="/src/assets/icons/racha_arrow.svg"
-              className="w-3 h-3"
-            ></img>
+            <img src="/assets/icons/racha_arrow.svg" className="w-3 h-3"></img>
           }
         />
         <div className="flex justify-between">

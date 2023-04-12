@@ -5,10 +5,7 @@ export default function EjercicioDelDiaEjercicio() {
         <ComponentHeader
           title="Ejercicio del dia"
           icon={
-            <img
-              src="/src/assets/icons/racha_arrow.svg"
-              className="w-3 h-3"
-            ></img>
+            <img src="/assets/icons/racha_arrow.svg" className="w-3 h-3"></img>
           }
         />
         <div className="flex justify-between pb-4">
@@ -24,12 +21,12 @@ export default function EjercicioDelDiaEjercicio() {
           <EjercicioCard
             ejercicio="Caminata"
             tiempo="30 minutos"
-            image={'/src/assets/caminata.svg'}
+            image={'/assets/caminata.svg'}
           />
           <EjercicioCard
             ejercicio="Estiramiento"
             tiempo="15 minutos"
-            image={'/src/assets/estiramiento.svg'}
+            image={'/assets/estiramiento.svg'}
           />
         </div>
       </div>

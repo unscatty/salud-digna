@@ -6,10 +6,7 @@ export default function Oficial(props) {
       <ComponentHeader
         title="Oficial"
         icon={
-          <img
-            src="/src/assets/icons/racha_arrow.svg"
-            className="w-3 h-3"
-          ></img>
+          <img src="/assets/icons/racha_arrow.svg" className="w-3 h-3"></img>
         }
       />
       <div className="bg-fifth p-2 rounded  w-full">
@@ -22,7 +19,7 @@ export default function Oficial(props) {
         nombre="Juan Pablo Muñiz"
         date="13 ABR 2023"
         descripcion="Comer saludable el dificil, no siempre tiene la motivación. Lo que a mi me motiva el ver mi yo del pasado."
-        image="/src/assets/cambio_fisico.jpg"
+        image="/assets/cambio_fisico.jpg"
       />
     </div>
   );

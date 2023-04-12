@@ -8,10 +8,7 @@ export default function Comunidad() {
         <ComponentHeader
           title="Comunidad"
           icon={
-            <img
-              src="/src/assets/icons/racha_arrow.svg"
-              className="w-3 h-3"
-            ></img>
+            <img src="/assets/icons/racha_arrow.svg" className="w-3 h-3"></img>
           }
         />
 
@@ -51,7 +48,6 @@ export default function Comunidad() {
               }
             >
               <Publico />
-          
             </Tab.Panel>
             <Tab.Panel
               className={
@@ -59,7 +55,6 @@ export default function Comunidad() {
               }
             >
               <Oficial />
-        
             </Tab.Panel>
           </Tab.Panels>
         </Tab.Group>

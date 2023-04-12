@@ -7,10 +7,7 @@ export default function Despensa() {
         <ComponentHeader
           title="Despensa"
           icon={
-            <img
-              src="/src/assets/icons/racha_arrow.svg"
-              className="w-3 h-3"
-            ></img>
+            <img src="/assets/icons/racha_arrow.svg" className="w-3 h-3"></img>
           }
         />
 
@@ -42,7 +39,7 @@ export default function Despensa() {
               required
             />
           </div>
-          
+
           <button
             type="submit"
             className="h-full p-2 text-sm font-medium text-white bg-fifth rounded-lg border border-fifth hover:bg-fifth hover:border-fifth focus:outline-none focus:ring-2 focus:ring-offset-2 focus:fifth text-xs ml-2"
@@ -55,27 +52,27 @@ export default function Despensa() {
         <div className="grid grid-cols-3 gap-2 pt-2">
           <DespensaItem
             comida="Yogurt"
-            icon={<img src="/src/assets/yogurt.png" className="w-100 "></img>}
+            icon={<img src="/assets/yogurt.png" className="w-100 "></img>}
           />
           <DespensaItem
             comida="Yogurt"
-            icon={<img src="/src/assets/yogurt.png" className="w-100"></img>}
+            icon={<img src="/assets/yogurt.png" className="w-100"></img>}
           />
           <DespensaItem
             comida="Yogurt"
-            icon={<img src="/src/assets/yogurt.png" className="w-100"></img>}
+            icon={<img src="/assets/yogurt.png" className="w-100"></img>}
           />
           <DespensaItem
             comida="Yogurt"
-            icon={<img src="/src/assets/yogurt.png" className="w-100"></img>}
+            icon={<img src="/assets/yogurt.png" className="w-100"></img>}
           />
           <DespensaItem
             comida="Yogurt"
-            icon={<img src="/src/assets/yogurt.png" className="w-100"></img>}
+            icon={<img src="/assets/yogurt.png" className="w-100"></img>}
           />
           <DespensaItem
             comida="Yogurt"
-            icon={<img src="/src/assets/yogurt.png" className="w-100"></img>}
+            icon={<img src="/assets/yogurt.png" className="w-100"></img>}
           />
         </div>
       </div>

@@ -14,12 +14,12 @@ export default function EjercicioDelDia() {
         <EjercicioCard
           ejercicio="Caminata"
           tiempo="30 minutos"
-          image={'/src/assets/caminata.svg'}
+          image={'/assets/caminata.svg'}
         />
         <EjercicioCard
           ejercicio="Estiramiento"
           tiempo="15 minutos"
-          image={'/src/assets/estiramiento.svg'}
+          image={'/assets/estiramiento.svg'}
         />
       </div>
     </div>

@@ -4,7 +4,7 @@ export default function ComidaDeHoy(props) {
       <ComponentHeader
         icon={
           <img
-            src="/src/assets/icons/comida_zanahoria.svg"
+            src="/assets/icons/comida_zanahoria.svg"
             className="w-3 h-3"
           ></img>
         }
@@ -16,21 +16,21 @@ export default function ComidaDeHoy(props) {
         <Platillo
           tiempo="DESAYUNO"
           calorias="457 cal"
-          logo={<img src="/src/assets/yogurt.png" className="w-100"></img>}
+          logo={<img src="/assets/yogurt.png" className="w-100"></img>}
           descripcion="Yogurt con arandanos"
           state="inactive"
         />
         <Platillo
           tiempo="COMIDA"
           calorias="457 cal"
-          logo={<img src="/src/assets/manzana.svg" className="w-100"></img>}
+          logo={<img src="/assets/manzana.svg" className="w-100"></img>}
           descripcion="Colifor y manzana"
           state="active"
         />
         <Platillo
           tiempo="CENA"
           calorias="457 cal"
-          logo={<img src="/src/assets/frutas.svg" className="w-100"></img>}
+          logo={<img src="/assets/frutas.svg" className="w-100"></img>}
           descripcion="Frutas con almendras"
           state="inactive"
         />

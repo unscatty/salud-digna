@@ -7,10 +7,7 @@ export default function Registro() {
         <ComponentHeader
           title="Registro del dia"
           icon={
-            <img
-              src="/src/assets/icons/racha_arrow.svg"
-              className="w-3 h-3"
-            ></img>
+            <img src="/assets/icons/racha_arrow.svg" className="w-3 h-3"></img>
           }
         />
         <div className="flex justify-between pb-4">
@@ -32,7 +29,7 @@ export default function Registro() {
             <PlatilloPlan
               tiempo="DESAYUNO"
               calorias="457 cal"
-              logo={<img src="/src/assets/yogurt.png" className="w-100"></img>}
+              logo={<img src="/assets/yogurt.png" className="w-100"></img>}
               descripcion="Yogurt con arandanos"
               state="inactive"
             />
@@ -44,7 +41,7 @@ export default function Registro() {
             <PlatilloPlan
               tiempo="COMIDA"
               calorias="457 cal"
-              logo={<img src="/src/assets/manzana.svg" className="w-100"></img>}
+              logo={<img src="/assets/manzana.svg" className="w-100"></img>}
               descripcion="Colifor y manzana"
               state="inactive"
             />
@@ -57,7 +54,7 @@ export default function Registro() {
             <PlatilloPlan
               tiempo="CENA"
               calorias="457 cal"
-              logo={<img src="/src/assets/frutas.svg" className="w-100"></img>}
+              logo={<img src="/assets/frutas.svg" className="w-100"></img>}
               descripcion="Frutas con almendras"
               state="inactive"
             />

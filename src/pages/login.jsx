@@ -1,19 +1,15 @@
-import logo from '../assets/logo2.svg';
+import logo from '/assets/logo2.svg';
 
 export default function Login() {
   return (
     <>
       <div className="min-h-screen bg-first sm:py-12 w-screen h-screen text-black">
         <div
-
           className="bg-third flex justify-center rounded-bl-full shadow-2xl flex justify-center items-center p-15 "
-          
           style={{
- 
             height: '95%',
           }}
         >
-
           <div className="mb-20 w-100%">
             <div className="w-30 fill-fifth mb-10 m-auto stroke-fifth">
               <img src={logo} />
@@ -55,7 +51,6 @@ export default function Login() {
               <Link
                 to={'/'}
                 type="button"
-                
                 className="bg-first text-third w-full py-2.5  rounded-lg text-sm shadow-xl hover:shadow-2xl font-semibold text-center inline-block"
               >
                 <span className="inline-block mr-2 ">Login</span>

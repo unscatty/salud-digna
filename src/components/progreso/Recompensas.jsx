@@ -13,21 +13,21 @@ export default function Recompensas(props) {
           <div className="card recompensa bg-second">
             <div className="recompensa__container">
               <p className="font-bold text-xs mb-2">Primera cita gratis</p>
-              <img src="/src/assets/icons/saludDigna.png" alt="Salud Digna" />
+              <img src="/assets/icons/saludDigna.png" alt="Salud Digna" />
             </div>
           </div>
 
           <div className="card recompensa">
             <div className="recompensa__container">
               <p className="font-bold text-xs mb-2">10% Salud Digna</p>
-              <img src="/src/assets/icons/saludDigna.png" alt="Salud Digna" />
+              <img src="/assets/icons/saludDigna.png" alt="Salud Digna" />
             </div>
           </div>
 
           <div className="card recompensa">
             <div className="recompensa__container">
               <p className="font-bold text-xs mb-2">10% Salud Digna</p>
-              <img src="/src/assets/icons/saludDigna.png" alt="Salud Digna" />
+              <img src="/assets/icons/saludDigna.png" alt="Salud Digna" />
             </div>
           </div>
         </div>
