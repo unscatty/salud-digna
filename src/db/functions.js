@@ -15,7 +15,6 @@ export default async function getPatiens()  {
     // const name = data[0].nombre;
     // const name = snapshot.docs.map(doc => doc.data().nombre);    
     // console.log(name);
-    
 }
 
 export const setPatien = async (id, nombre, edad,genero, alergias, enfermedades, medicamentos, cirugias, antecedentes,peso,estatura) => {
@@ -43,7 +42,7 @@ export const setPatien = async (id, nombre, edad,genero, alergias, enfermedades,
 }
 
 
-export const getPatien = async (id) => {
+export async function getPatien (id){
     try{
         const docRef = await getDoc(doc(db, "pacientes", id));
         const data = docRef.data();
@@ -52,3 +51,97 @@ export const getPatien = async (id) => {
         console.log(error);
     }
 }
+
+//citas collection
+//doctor
+export function getCitasDoctor() {
+    const citasCollectionRef = collection(db, 'citas-doctor');
+    return getDocs(citasCollectionRef);
+}
+
+//add cita
+export const addCitaDoctor = async (citaId, pacienteId, date) => {
+    const docRef = doc(db, "citas-doctor", citaId);
+    const patient = await getPatien(pacienteId);
+    const data = {
+        citaId,
+        date,
+        patient,
+    }
+    try {
+        await setDoc(docRef, data);
+        console.log("Document written with ID: ", docRef.id);
+    }catch (error) {
+        console.error("Error adding document: ", error);
+    }
+}
+
+//delete cita
+export const deleteCitaDoctor = async (citaId) => {
+    const docRef = doc(db, "citas-doctor", citaId);
+    try {
+        await deleteDoc(docRef);
+        console.log("Document successfully deleted!");
+    }catch (error) {
+        console.error("Error removing document: ", error);
+    }
+}
+
+
+//agregar un nuevo post oficial
+
+export const addPost = async (id, title, content, date, category, img) => {
+    const docRef = doc(db, "oficial", id);
+    const data = {
+        id,
+        title,
+        content,
+        date,
+        category,
+        img,
+    }
+    try {
+        await setDoc(docRef, data);
+        console.log("Document written with ID: ", docRef.id);
+    }catch (error) {
+        console.error("Error adding document: ", error);
+    }
+}
+
+//obtener todos los posts oficiales
+export async function getOficialPosts() {
+    const postsCollectionRef = collection(db, 'oficial');
+    const snapshot = await getDocs(postsCollectionRef);
+    const data = snapshot.docs.map(doc => doc.data());
+    return data;
+}
+
+//agregar un post publico
+export const addPublicPost = async (id, title, content, date, category, img) => {
+    const docRef = doc(db, "public", id);
+    const data = {
+        id,
+        title,
+        content,
+        date,
+        category,
+        img,
+    }
+    try {
+        await setDoc(docRef, data);
+        console.log("Document written with ID: ", docRef.id);
+    }catch (error) {
+        console.error("Error adding document: ", error);
+    }
+}
+
+//obtener todos los posts publicos
+export async function getPublicPosts() {
+    const postsCollectionRef = collection(db, 'public');
+    const snapshot = await getDocs(postsCollectionRef);
+    const data = snapshot.docs.map(doc => doc.data());
+    return data;
+}
+
+
+

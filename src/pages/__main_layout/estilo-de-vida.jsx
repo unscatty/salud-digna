@@ -5,13 +5,16 @@ import { Fragment } from 'react';
 export default function EstiloDeVidaLayout() {
   return (
     <div className="container">
-      <div className="w-full mt-2 bg-white -6 aspect-[5] rounded-2xl">
-        <div className="flex flex-col justify-center items-center h-full m-5px text-xs">
-          “Deje que los alimentos sean su medicina y que la medicina sea su
-          alimento”
+      <div className="w-full bg-white rounded-2xl p-4">
+        <div className="flex flex-col h-full text-xs ">
+          <p className='self-left mb-1 font-semibold'>Frase del día</p>
+          <p className='font-italic'>
+            “Deje que los alimentos sean su medicina y que la medicina sea su
+            alimento”
+          </p>
         </div>
       </div>
-      <Tab.Group defaultIndex={1}>
+      <Tab.Group defaultIndex={0}>
         <Tab.List className="grid grid-cols-3 gap-3.5 my-3">
           {EstiloDeVidaContents.map((tab) => (
             <Tab as={Fragment} key={tab.name}>
@@ -19,7 +22,7 @@ export default function EstiloDeVidaLayout() {
                 <button
                   className={`${
                     selected ? 'bg-third' : 'bg-second'
-                  } rounded-full p-1 text-center text-sm font-bold text-fourth focus:outline-none`}
+                  } rounded-full p-1 text-center text-xs font-bold text-fourth focus:outline-none`}
                 >
                   {tab.name}
                 </button>

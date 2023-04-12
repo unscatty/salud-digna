@@ -2,6 +2,7 @@
   "globals": {
     "BarSueno": true,
     "BottomNavbar": true,
+    "BottomNavbarNutriologo": true,
     "Calendar": true,
     "CitaItem": true,
     "CitaList": true,
@@ -22,11 +23,7 @@
     "EDVMainCard": true,
     "EjercicioCard": true,
     "EjercicioDelDia": true,
-<<<<<<< HEAD
-    "Ejercicios": true,
-=======
     "EjercicioDelDiaEjercicio": true,
->>>>>>> 3b720c3f24502aa28a601f0a699b6b369c6e28fc
     "Estadisticas": true,
     "EstiloDeVidaContents": true,
     "EstudiosItem": true,
@@ -44,6 +41,7 @@
     "Lista": true,
     "ListaItem": true,
     "Loading": true,
+    "MalosHabitos": true,
     "MasEjercicios": true,
     "MiEjercicio": true,
     "NavLink": true,
@@ -63,6 +61,7 @@
     "RegistroItem": true,
     "Route": true,
     "Routes": true,
+    "RutaDeHabitos": true,
     "SaludCitas": true,
     "SaludEstudios": true,
     "SaludMainCard": true,

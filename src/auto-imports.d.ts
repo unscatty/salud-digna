@@ -6,6 +6,7 @@ export {}
 declare global {
   const BarSueno: typeof import('./components/progreso/graficas/BarSueno.jsx')['default']
   const BottomNavbar: typeof import('./components/common/BottomNavbar.jsx')['default']
+  const BottomNavbarNutriologo: typeof import('./components/common/BottomNavbarNutriologo.jsx')['default']
   const Calendar: typeof import('./components/salud/Calendar.jsx')['default']
   const CitaItem: typeof import('./components/salud/citas/CitaItem.jsx')['default']
   const CitaList: typeof import('./components/salud/citas/CitaList.jsx')['default']
@@ -44,10 +45,7 @@ declare global {
   const Lista: typeof import('./components/estilo-de-vida/comida/comida-alimentos/lista/Lista.jsx')['default']
   const ListaItem: typeof import('./components/estilo-de-vida/comida/comida-alimentos/lista/ListaItem.jsx')['default']
   const Loading: typeof import('./components/common/Loading/Loading.jsx')['default']
-<<<<<<< HEAD
   const MalosHabitos: typeof import('./components/estilo-de-vida/habitos/MalosHabitos.jsx')['default']
-=======
->>>>>>> 3b720c3f24502aa28a601f0a699b6b369c6e28fc
   const MasEjercicios: typeof import('./components/estilo-de-vida/ejercicio/MasEjercicios.jsx')['default']
   const MiEjercicio: typeof import('./components/estilo-de-vida/ejercicio/MiEjercicio.jsx')['default']
   const NavLink: typeof import('react-router-dom')['NavLink']

@@ -1,5 +1,4 @@
 export default function ListaItem() {
-<<<<<<< HEAD
   const [counter, setCounter] = useState(0);
 
   //increase counter
@@ -20,8 +19,6 @@ export default function ListaItem() {
   };
 
 
-=======
->>>>>>> 3b720c3f24502aa28a601f0a699b6b369c6e28fc
   return (
     <div className="item-container flex bg-third w-full p-1.5 rounded justify-between">
       <div className="checkbox flex items-center ">
@@ -42,19 +39,11 @@ export default function ListaItem() {
         </div>
       </div>
       <div class="counter-container flex gap-3 items-center">
-<<<<<<< HEAD
         <span class="minus-icon  text-[8px]  font-semibold inline-block uppercase rounded-full text-third bg-red uppercase last:mr-0  font-bold drop-shadow-md aspect-square flex items-center w-5 h-5 justify-center" onClick={decrease}>
           -
         </span>
         <span className="text-xs">{counter}</span>
         <span class="minus-icon text-[8px]  font-semibold inline-block  w-5 h-5 justify-center uppercase rounded-full text-third bg-fifth uppercase last:mr-0  font-bold drop-shadow-md aspect-square flex items-center" onClick={increase}>
-=======
-        <span class="minus-icon  text-[8px]  font-semibold inline-block uppercase rounded-full text-third bg-red uppercase last:mr-0  font-bold drop-shadow-md aspect-square flex items-center w-5 h-5 justify-center">
-          -
-        </span>
-        <span className="text-xs"> 1 </span>
-        <span class="minus-icon text-[8px]  font-semibold inline-block  w-5 h-5 justify-center uppercase rounded-full text-third bg-fifth uppercase last:mr-0  font-bold drop-shadow-md aspect-square flex items-center">
->>>>>>> 3b720c3f24502aa28a601f0a699b6b369c6e28fc
           +
         </span>
       </div>

@@ -36,7 +36,9 @@ export default function Publicacion() {
                     </div>
                     <div className="text-lg leading-6 font-medium space-y-1">
                       <h3>{person.name}</h3>
-                      <p className="text-indigo-600">{person.logro}</p>
+                      <p className="text-fourth text-xl font-semibold">
+                        {person.logro}
+                      </p>
                     </div>
                     <div className="text-lg">
                       <p className="text-gray-500">{person.descripcion}</p>
