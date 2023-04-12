@@ -86,7 +86,7 @@ export default function Header() {
       ref={headerRef}
     >
       {activeHeader(isSticky)}
-      <div className="inline-flex justify-between gap-6 items-center">
+      <div className="inline-flex justify-between gap-2 items-center">
         <div className="inline-flex justify-center items-center bg-third aspect-square rounded-full h-8 shadow-md">
           <i className="i-heroicons:bell text-gray-8 w-5.5 h-5.5 aspect-square" />
           <span className="absolute -translate-y-2 translate-x-2 flex h-2 w-2">
@@ -94,11 +94,11 @@ export default function Header() {
             <span className="relative inline-flex rounded-full h-2 w-2 bg-sky-500" />
           </span>
         </div>
-        <div className="inline-flex justify-center items-center bg-third aspect-square rounded rounded-xl h-10 shadow-md">
-          <Link to="perfil" className="inline-flex">
+        <Link to="perfil">
+          <div className="inline-flex justify-center items-center bg-third aspect-square rounded rounded-xl h-10 shadow-md">
             <i className="i-heroicons:user-20-solid text-fourth w-6 h-6 aspect-square" />
-          </Link>
-        </div>
+          </div>
+        </Link>
       </div>
     </div>
   );

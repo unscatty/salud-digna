@@ -23,6 +23,7 @@ export default defineConfig({
       third: '#FFF',
       fourth: '#12895A',
       fifth: '#5E9780',
+      fiveth: '#044028',
       iconActive: '#68a961',
       iconInactive: '#868589',
     },
@@ -31,6 +32,7 @@ export default defineConfig({
     ['px-global', 'px-6'],
     ['mx-global', 'mx-6'],
     ['card', 'bg-third shadow-lg rounded-2xl p-4'],
+    ['card-white', 'bg-white shadow-lg rounded-2xl p-4'],
     ['card-second', 'bg-second shadow-lg rounded-2xl p-4'],
   ],
   presets: [

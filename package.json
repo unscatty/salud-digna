@@ -17,6 +17,7 @@
     "@unocss/reset": "^0.50.6",
     "ahooks": "^3.7.6",
     "chart.js": "^4.2.1",
+    "firebase": "^9.19.1",
     "nprogress": "^0.2.0",
     "react": "^18.2.0",
     "react-chartjs-2": "^5.2.0",

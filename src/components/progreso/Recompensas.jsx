@@ -36,9 +36,9 @@ export default function Recompensas(props) {
           <p>60 dias</p>
           <p>100 dias</p>
         </div>
-        <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+        <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
           <div
-            class="bg-second text-xs font-medium text-fifth text-center p-0.3 leading-none rounded-full"
+            className="bg-second text-xs font-medium text-fifth text-center p-0.3 leading-none rounded-full"
             style={{ width: '37%' }}
           >
             37 días
