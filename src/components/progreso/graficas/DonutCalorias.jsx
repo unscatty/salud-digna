@@ -163,7 +163,7 @@ export default function DonutCalorias({ calorias, meta }) {
             fontWeight: 500,
             sidePadding: 1, // Default is 20 (as a percentage)
             minFontSize: 1.25, // Default is 20 (in px), set to false and text will not wrap.
-            maxFontSize: 2, // Default is 20 (in px), set to false and text will not wrap.
+            maxFontSize: 1.5, // Default is 20 (in px), set to false and text will not wrap.
             lineHeight: 1, // Default is 25 (in px), used for when text wraps
           },
           {
@@ -178,8 +178,8 @@ export default function DonutCalorias({ calorias, meta }) {
             // fontStyle: 'Arial', // Default is Arial
             fontWeight: 500,
             sidePadding: 10, // Default is 20 (as a percentage)
-            minFontSize: 0.8, // Default is 20 (in px), set to false and text will not wrap.
-            maxFontSize: 0.8, // Default is 20 (in px), set to false and text will not wrap.
+            minFontSize: 0.7, // Default is 20 (in px), set to false and text will not wrap.
+            maxFontSize: 0.7, // Default is 20 (in px), set to false and text will not wrap.
             lineHeight: 12, // Default is 25 (in px), used for when text wraps
           },
           {
@@ -188,8 +188,8 @@ export default function DonutCalorias({ calorias, meta }) {
             // fontStyle: 'Arial', // Default is Arial
             fontWeight: 500,
             sidePadding: 10, // Default is 20 (as a percentage)
-            minFontSize: 0.8, // Default is 20 (in px), set to false and text will not wrap.
-            maxFontSize: 0.8, // Default is 20 (in px), set to false and text will not wrap.
+            minFontSize: 0.7, // Default is 20 (in px), set to false and text will not wrap.
+            maxFontSize: 0.7, // Default is 20 (in px), set to false and text will not wrap.
             lineHeight: -30, // Default is 25 (in px), used for when text wraps
           },
         ],

@@ -1,9 +1,13 @@
+import Recompensas from '~/components/progreso/Recompensas';
+
 export default function Estadisticas() {
   return (
     <div className="container">
-      <div className="w-full mb-4 mt-2 card aspect-[3] rounded-2xl p-5">
-        <p>Racha</p>
+      <div className="p-5 bg-white rounded-lg mb-4">
+        <Racha link={true} />
+        <Recompensas />
       </div>
+
       <div className="w-full card my-4">
         <GraficaPesoPerdido month={'Octubre'} />
       </div>

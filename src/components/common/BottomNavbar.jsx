@@ -7,21 +7,6 @@ export default function BottomNavbar() {
   const scroll = useScroll(document);
   const threshold = 10;
 
-  useEffect(() => {
-    if (!scroll) return;
-
-    if (scroll.top > prevScrollPos && scroll.top - prevScrollPos > threshold) {
-      setVisible(false);
-    } else if (
-      scroll.top < prevScrollPos &&
-      prevScrollPos - scroll.top > threshold
-    ) {
-      setVisible(true);
-    }
-
-    setPrevScrollPos(scroll.top);
-  }, [scroll]);
-
   return (
     <>
       <div

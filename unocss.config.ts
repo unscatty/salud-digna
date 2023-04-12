@@ -29,7 +29,7 @@ export default defineConfig({
   shortcuts: [
     ['px-global', 'px-6'],
     ['mx-global', 'mx-6'],
-    ['card', 'bg-second shadow-lg rounded-2xl p-4'],
+    ['card', 'bg-third shadow-lg rounded-2xl p-4'],
     ['card-white', 'bg-white shadow-lg rounded-2xl p-4'],
   ],
   presets: [

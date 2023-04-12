@@ -1,6 +1,6 @@
 export default function Estadisticas(props) {
   return (
-    <div className="estadisticas p-5 bg-white rounded-lg mb-4">
+    <div className="estadisticas p-5 bg-second rounded-lg mb-4">
       <ComponentHeader
         icon={
           <i className="i-heroicons:chart-bar-20-solid color-black w-3 h-3"></i>

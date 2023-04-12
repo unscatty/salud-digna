@@ -3,7 +3,10 @@ export default function ComidaDeHoy(props) {
     <div className="estadisticas p-5 bg-white rounded-lg mb-4">
       <ComponentHeader
         icon={
-          <i className="i-heroicons:chart-bar-20-solid color-black w-3 h-3"></i>
+          <img
+            src="/src/assets/icons/comida_zanahoria.svg"
+            className="w-3 h-3"
+          ></img>
         }
         title="Comida de Hoy"
         link="/estilo-de-vida"
@@ -13,35 +16,23 @@ export default function ComidaDeHoy(props) {
         <Platillo
           tiempo="DESAYUNO"
           calorias="457 cal"
-          logo={
-            <img
-              src="/src/assets/Healthy breakfast meals set-ai 1.png"
-              className="w-100"
-            ></img>
-          }
+          logo={<img src="/src/assets/yogurt.png" className="w-100"></img>}
           descripcion="Yogurt con arandanos"
+          state="inactive"
         />
         <Platillo
-          tiempo="DESAYUNO"
+          tiempo="COMIDA"
           calorias="457 cal"
-          logo={
-            <img
-              src="/src/assets/Healthy breakfast meals set-ai 1.png"
-              className="w-100"
-            ></img>
-          }
-          descripcion="Yogurt con arandanos"
+          logo={<img src="/src/assets/manzana.svg" className="w-100"></img>}
+          descripcion="Colifor y manzana"
+          state="active"
         />
         <Platillo
-          tiempo="DESAYUNO"
+          tiempo="CENA"
           calorias="457 cal"
-          logo={
-            <img
-              src="/src/assets/Healthy breakfast meals set-ai 1.png"
-              className="w-100"
-            ></img>
-          }
-          descripcion="Yogurt con arandanos"
+          logo={<img src="/src/assets/frutas.svg" className="w-100"></img>}
+          descripcion="Frutas con almendras"
+          state="inactive"
         />
       </div>
     </div>

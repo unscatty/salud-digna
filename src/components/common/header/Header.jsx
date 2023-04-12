@@ -80,7 +80,7 @@ export default function Header() {
   }, [headerRef]);
   return (
     <div
-      className={`sticky -top-4 flex py-5 justify-between text-black px-global bg-first z-999 ${
+      className={`sticky -top-[.1] flex py-5 justify-between text-black px-global bg-first z-999 ${
         isSticky ? 'shadow-[0px_5px_10px_0_rgba(0,0,0,0.35)]' : ''
       }`}
       ref={headerRef}

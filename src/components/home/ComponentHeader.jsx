@@ -5,7 +5,16 @@ export default function ComponentHeader(props) {
       {props.icon}
 
       <p className="text-xs font-bold ">{props.title}</p>
-      {props.link ? (<NavLink to={props.link} className="text-xs font-bold text-fifth ml-auto">Ver Más</NavLink>) : "" }
+      {props.link ? (
+        <NavLink
+          to={props.link}
+          className="text-xs font-bold text-fifth ml-auto"
+        >
+          Ver Más
+        </NavLink>
+      ) : (
+        ''
+      )}
     </header>
   );
 }

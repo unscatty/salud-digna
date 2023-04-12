@@ -5,7 +5,9 @@ import Estadisticas from '~/components/home/estadisticas/Estadisticas';
 export default function index() {
   return (
     <>
-      <Racha link={true} />
+      <div className="p-5 bg-white rounded-lg mb-4">
+        <Racha link={true} />
+      </div>
       <Estadisticas />
       <ComidaDeHoy />
       <EjercicioDelDia />
