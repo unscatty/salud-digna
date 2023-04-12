@@ -9,7 +9,7 @@ export default function Perfil() {
         </div>
       </div>
       <div className="flex justify-center h-70% items-center flex-col space-y-7">
-        <div className="w-20 h-20 inline-flex justify-center items-center bg-third aspect-square rounded rounded-2xl shadow-md">
+        <div className="w-20 h-20 inline-flex justify-center items-center bg-third aspect-square rounded rounded-lg shadow-md">
           <i className="i-heroicons:user-20-solid text-fourth w-10 h-10 aspect-square" />
         </div>
         <div className="w-75 h-10 inline-flex justify-center items-center border-rounded-3xl bg-gray-300 transform">

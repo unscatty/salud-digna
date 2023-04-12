@@ -13,7 +13,7 @@ export const PacientesNavNutri = {
 export const IaNavNutri = {
   name: 'IA Nutriologo',
   path: '/IA-nutri',
-  iconClass: 'i-heroicons:cpu-chip-20-solid',
+  iconClass: 'i-heroicons:cpu-chip-solid',
 }
 
 

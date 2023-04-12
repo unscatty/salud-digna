@@ -1,10 +1,10 @@
 import { Tab } from '@headlessui/react';
-import Publicacion from '~/components/comunidad/Publicacion';
+import Publico from '~/components/comunidad/Publico';
 
 export default function Comunidad() {
   return (
     <>
-      <div className="w-full bg-white rounded-2xl p-4">
+      <div className="w-full bg-white rounded-lg p-4">
         <ComponentHeader
           title="Comunidad"
           icon={
@@ -18,7 +18,7 @@ export default function Comunidad() {
         <Tab.Group>
           <Tab.List
             className={
-              'z-0 rounded-full shadow flex divide-x divide-first border-first border-1 text-xs'
+              'z-0 rounded-full shadow flex divide-x divide-first border-first border-1 text-xs font-bold'
             }
           >
             <Tab className={'w-1/2 border-blueGray'}>
@@ -50,24 +50,16 @@ export default function Comunidad() {
                 'w-full bg-white rounded-3xl flex flex-col items-center'
               }
             >
-              <div className="mt-2 bg-first p-2 rounded mb-2 w-100%">
-                <p className="text-xs text-center font-bold text-third">
-                  ¡Comparte tu progreso con los demas!
-                </p>
-              </div>
-              <Publicacion className={''} />
+              <Publico />
+          
             </Tab.Panel>
             <Tab.Panel
               className={
                 'w-full bg-white flex rounded-3xl flex-col items-center'
               }
             >
-              <div className="mt-2 bg-first p-2 rounded mb-2 w-100%">
-                <p className="text-xs text-center font-bold text-third">
-                  ¡Aprende sobre nutrición!
-                </p>
-              </div>
-              <Publicacion className={''} />
+              <Oficial />
+        
             </Tab.Panel>
           </Tab.Panels>
         </Tab.Group>

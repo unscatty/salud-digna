@@ -5,7 +5,7 @@ import { Fragment } from 'react';
 export default function EstiloDeVidaLayout() {
   return (
     <div className="container">
-      <div className="w-full bg-white rounded-2xl p-4">
+      <div className="w-full bg-white rounded-lg p-4">
         <div className="flex flex-col h-full text-xs ">
           <p className='self-left mb-1 font-semibold'>Frase del día</p>
           <p className='font-italic'>

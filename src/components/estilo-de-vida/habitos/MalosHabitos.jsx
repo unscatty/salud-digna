@@ -23,10 +23,10 @@ export default function MalosHabitos() {
           />
           <button
             type="submit"
-            class="h-full px-2 text-sm font-medium text-white bg-fifth rounded-lg border border-fifth hover:bg-fifth hover:border-fifth focus:outline-none focus:ring-2 focus:ring-offset-2 focus:fifth text-xs ml-2"
+            className="h-full px-2 text-sm font-medium text-white bg-fifth rounded-lg border border-fifth hover:bg-fifth hover:border-fifth focus:outline-none focus:ring-2 focus:ring-offset-2 focus:fifth text-xs ml-2"
           >
             Agregar
-            <span class="sr-only">Agregar</span>
+            <span className="sr-only">Agregar</span>
           </button>
         </div>
 

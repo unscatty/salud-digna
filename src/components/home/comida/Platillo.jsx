@@ -41,7 +41,7 @@ export default function Platillo(props) {
         {props.descripcion}
       </div>
       {props.state === 'active' && (
-        <span class="position-absolute left-50% translate-[-50%] translate-y-[-50%] text-[8px]  font-semibold inline-block  px-2 uppercase rounded-full text-fifth bg-second uppercase last:mr-0 mr-1 font-bold drop-shadow-md">
+        <span className="position-absolute left-50% translate-[-50%] translate-y-[-50%] text-[8px]  font-semibold inline-block  px-2 uppercase rounded-full text-fifth bg-second uppercase last:mr-0 mr-1 font-bold drop-shadow-md">
           HORA
         </span>
       )}
