@@ -1,5 +1,5 @@
 import LoginWithGoogle from '~/db/LoginWithGoogle';
-import logo from '/assets/logo2.svg';
+import logo from '~/assets/logo2.svg';
 // import { redirect } from 'react-router-dom';
 
 export default function Login() {
