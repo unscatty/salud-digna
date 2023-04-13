@@ -480,7 +480,7 @@ export default function Nutri() {
                           href="#"
                           className="w-full flex justify-center items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50"
                         >
-                          View all
+                          Ver todos
                         </a>
                       </div>
                     </div>
@@ -548,9 +548,9 @@ export default function Nutri() {
         </main>
         <footer>
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
-            <div className="border-t border-gray-200 py-8 text-sm text-gray-500 text-center sm:text-left">
+            <div className="border-t border-gray-200 py-8 text-sm text-white text-center sm:text-left">
               <span className="block sm:inline">
-                &copy; 2021 Tailwind Labs Inc.
+                &copy; 2023 Salud Digna Org.
               </span>{' '}
               <span className="block sm:inline">All rights reserved.</span>
             </div>
