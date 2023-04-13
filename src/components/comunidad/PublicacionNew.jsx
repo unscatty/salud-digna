@@ -1,9 +1,37 @@
+import { getAuth, onAuthStateChanged } from 'firebase/auth';
+import { app } from '~/db/firebase-config';
+
+const predeterminedComments = [
+  '¡Te ves muy bien!',
+  '¡Ánimo!',
+  '¡Continua así!',
+  'Muy buen progreso',
+  '¡Sigue así!',
+];
+
 export default function PublicacionNew(props) {
   const [like, setLike] = useState(false);
+  const [likeCount, setLikeCount] = useState(0);
+
+  const [comments, setComments] = useState([]);
+
+  const addComment = (comment) => {
+    setComments([...comments, comment]);
+  };
 
   const handleLike = () => {
     setLike(!like);
+    like ? setLikeCount(likeCount - 1) : setLikeCount(likeCount + 1);
   };
+
+  const auth = getAuth(app);
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      setUser(user);
+    });
+  }, []);
 
   return (
     <div className="card bg-third p-4 mt-2 w-full">
@@ -37,7 +65,7 @@ export default function PublicacionNew(props) {
           {props.descripcion}
         </div>
         <div className="card-body-image ">
-          <img src={props.image} className="rounded-lg" alt="" href="" />
+          {/* <img src={props.image} className="rounded-lg" alt="" href="" /> */}
         </div>
       </div>
 
@@ -49,11 +77,11 @@ export default function PublicacionNew(props) {
             }`}
             onClick={handleLike}
           ></i>
-          <p className="font-semibold text-gray-900">528 Likes</p>
+          <p className="font-semibold text-gray-900">{likeCount} Likes</p>
         </div>
 
         <div className="flex items-center search">
-          <label for="simple-search" className="sr-only">
+          <label htmlFor="simple-search" className="sr-only">
             Buscar alimento
           </label>
           <div className="relative w-full">
@@ -82,28 +110,27 @@ export default function PublicacionNew(props) {
 
         <div className="caja-de-comentarios mt-2">
           <hr className="mb-1" />
-          <div className="comentario grid grid-cols-[auto_auto_auto_1fr] items-center">
-            <div className="card-profile row-span-1 mr-2">
-              <img
-                src="/assets/profile.jpg"
-                alt=""
-                className="h-4 w-4 rounded-full"
-              />
-            </div>
-            <div className="card-name">
-              <p className="text-[11px] font-semibold">Juan Pablo Muñiz</p>
-            </div>
-            <div className="card-date text-gray row-start-1 col-start-3 text-[9px] flex  mt-1 ml-1">
-              13 ABR 2023
-            </div>
-            <div className="comentario text-[9px] col-start-2 col-span-3">
-              Creo que es importante tener una buena alimentacion y hacer
-              ejercicio.
-            </div>
-          </div>
+          {comments.map((comment) => (
+            <Comentario user={user} content={comment} />
+          ))}
 
-          <hr className="my-1" />
           <p className="text-gray-500 text-[10px] ">Ver mas comentarios (10)</p>
+        </div>
+        <div>
+          <p className="text-2.5 text-gray-6">Agrega un comentario:</p>
+        </div>
+        <div className="flex flex-row flex-wrap justify-center gap-1 text-2.4">
+          {predeterminedComments.map((comment, commentIdx) => {
+            return (
+              <span
+                key={commentIdx}
+                className="inline-flex items-center px-3 py-0.5 rounded-full font-medium bg-gray-100 text-gray-800 cursor-pointer"
+                onClick={() => addComment(comment)}
+              >
+                {comment}
+              </span>
+            );
+          })}
         </div>
       </div>
     </div>

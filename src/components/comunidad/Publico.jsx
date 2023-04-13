@@ -24,7 +24,19 @@ export default function Publico(props) {
         <PublicacionNew
           nombre="Juan Pablo Muñiz"
           date="13 ABR 2023"
-          descripcion="Comer saludable el dificil, no siempre tiene la motivación. Lo que a mi me motiva el ver mi yo del pasado."
+          descripcion={
+            <div className="flex gap-2 items-center">
+              <div>
+                <p className="text-4">¡Está en racha de ejecicio!</p>
+              </div>
+              <div className="flex flex-col ml-auto items-center">
+                <div className="i-mdi:arm-flex text-red-4 w-10 h-10"></div>
+                <span className="font-bold text-3.5 text-center text-orange-5">
+                  14 dias
+                </span>
+              </div>
+            </div>
+          }
           image="/assets/cambio_fisico.jpg"
         />
       </div>
