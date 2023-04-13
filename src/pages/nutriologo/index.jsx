@@ -11,33 +11,34 @@ import {
   UsersIcon,
   XIcon,
 } from '@heroicons/react/outline';
-import { SearchIcon } from '@heroicons/react/solid';
 import Pacientes from '~/db/datos/pacientes.json';
 
 const user = {
-  name: 'Chelsea Hagon',
-  email: 'chelsea.hagon@example.com',
+  name: 'Dra. Alondra Sánchez Gómez',
+  email: 'alondrasanchezgomez@saluddigna.org',
   role: 'Human Resources Manager',
   imageUrl:
     'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
 };
+
 const navigation = [
-  { name: 'Home', href: '#', current: true },
-  { name: 'Profile', href: '#', current: false },
-  { name: 'Resources', href: '#', current: false },
-  { name: 'Company Directory', href: '#', current: false },
-  { name: 'Openings', href: '#', current: false },
+  { name: 'Página principal', href: '#', current: true },
+  { name: 'Perfil', href: '#', current: false },
+  { name: 'Recursos', href: '#', current: false },
 ];
+
 const userNavigation = [
-  { name: 'Your Profile', href: '#' },
-  { name: 'Settings', href: '#' },
-  { name: 'Sign out', href: '#' },
+  { name: 'Tu perfil', href: '#' },
+  { name: 'Configuración', href: '#' },
+  { name: 'Cerrar sesión', href: '#' },
 ];
+
 const stats = [
-  { label: 'Vacation days left', value: 12 },
-  { label: 'Sick days left', value: 4 },
-  { label: 'Personal days left', value: 2 },
+  { label: 'Tareas pendientes', value: 12 },
+  { label: 'Citas para esta semana', value: 4 },
+  { label: 'Nuevos pacientes este mes', value: 2 },
 ];
+
 const actions = [
   {
     icon: ClockIcon,
@@ -82,57 +83,37 @@ const actions = [
     iconBackground: 'bg-indigo-50',
   },
 ];
-const recentHires = [
-  {
-    name: 'Leonard Krasner',
-    handle: 'leonardkrasner',
-    imageUrl:
-      'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    href: '#',
-  },
-  {
-    name: 'Floyd Miles',
-    handle: 'floydmiles',
-    imageUrl:
-      'https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    href: '#',
-  },
-  {
-    name: 'Emily Selman',
-    handle: 'emilyselman',
-    imageUrl:
-      'https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    href: '#',
-  },
-  {
-    name: 'Kristin Watson',
-    handle: 'kristinwatson',
-    imageUrl:
-      'https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    href: '#',
-  },
-];
-const announcements = [
+
+const tareasPendientes = [
   {
     id: 1,
-    title: 'Office closed on July 2nd',
-    href: '#',
-    preview:
-      'Cum qui rem deleniti. Suscipit in dolor veritatis sequi aut. Vero ut earum quis deleniti. Ut a sunt eum cum ut repudiandae possimus. Nihil ex tempora neque cum consectetur dolores.',
+    titulo: 'Revisar el progreso de los pacientes',
+    contenido:
+      'Revisar el peso, la composición corporal y los registros de alimentación de los pacientes para evaluar su progreso y hacer ajustes en su plan de alimentación si es necesario.',
   },
   {
     id: 2,
-    title: 'New password policy',
-    href: '#',
-    preview:
-      'Alias inventore ut autem optio voluptas et repellendus. Facere totam quaerat quam quo laudantium cumque eaque excepturi vel. Accusamus maxime ipsam reprehenderit rerum id repellendus rerum. Culpa cum vel natus. Est sit autem mollitia.',
+    titulo: 'Responder preguntas y mensajes de los pacientes',
+    contenido:
+      'Revisar los mensajes y preguntas enviadas por los pacientes y proporcionar respuestas y asesoramiento nutricional personalizado.',
   },
   {
     id: 3,
-    title: 'Office closed on July 2nd',
-    href: '#',
-    preview:
-      'Tenetur libero voluptatem rerum occaecati qui est molestiae exercitationem. Voluptate quisquam iure assumenda consequatur ex et recusandae. Alias consectetur voluptatibus. Accusamus a ab dicta et. Consequatur quis dignissimos voluptatem nisi.',
+    titulo: 'Revisar y aprobar planes de alimentación',
+    contenido:
+      'Revisar y aprobar los planes de alimentación de los pacientes en función de sus objetivos, necesidades y preferencias nutricionales.',
+  },
+  {
+    id: 4,
+    titulo: 'Realizar seguimiento a pacientes con patologías específicas',
+    contenido:
+      'Realizar seguimiento a pacientes con patologías específicas como diabetes, hipertensión arterial, enfermedades cardiovasculares, etc., para asegurarse de que estén siguiendo su plan de alimentación y controlando adecuadamente su condición.',
+  },
+  {
+    id: 5,
+    titulo: 'Realizar publicación en sección de comunidad',
+    contenido:
+      'Realizar publicación en sección de comunidad para compartir información nutricional relevante con los pacientes.',
   },
 ];
 
@@ -143,14 +124,6 @@ function classNames(...classes) {
 export default function Nutri() {
   return (
     <>
-      {/*
-        This example requires updating your template:
-
-        ```
-        <html class="h-full bg-gray-100">
-        <body class="h-full">
-        ```
-      */}
       <div className="min-h-full">
         <Popover
           as="header"
@@ -163,19 +136,11 @@ export default function Nutri() {
                   {/* Logo */}
                   <div className="absolute left-0 py-5 flex-shrink-0 lg:static">
                     <a href="#">
-                      <span className="sr-only">Workflow</span>
-                      {/* https://tailwindui.com/img/logos/workflow-mark-cyan-200.svg */}
-                      <svg
-                        className="h-8 w-auto"
-                        fill="none"
-                        viewBox="0 0 35 32"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill="#A5F3FC"
-                          d="M15.258 26.865a4.043 4.043 0 01-1.133 2.917A4.006 4.006 0 0111.253 31a3.992 3.992 0 01-2.872-1.218 4.028 4.028 0 01-1.133-2.917c.009-.698.2-1.382.557-1.981.356-.6.863-1.094 1.47-1.433-.024.109.09-.055 0 0l1.86-1.652a8.495 8.495 0 002.304-5.793c0-2.926-1.711-5.901-4.17-7.457.094.055-.036-.094 0 0A3.952 3.952 0 017.8 7.116a3.975 3.975 0 01-.557-1.98 4.042 4.042 0 011.133-2.918A4.006 4.006 0 0111.247 1a3.99 3.99 0 012.872 1.218 4.025 4.025 0 011.133 2.917 8.521 8.521 0 002.347 5.832l.817.8c.326.285.668.551 1.024.798.621.33 1.142.826 1.504 1.431a3.902 3.902 0 01-1.504 5.442c.033-.067-.063.036 0 0a8.968 8.968 0 00-3.024 3.183 9.016 9.016 0 00-1.158 4.244zM19.741 5.123c0 .796.235 1.575.676 2.237a4.01 4.01 0 001.798 1.482 3.99 3.99 0 004.366-.873 4.042 4.042 0 00.869-4.386 4.02 4.02 0 00-1.476-1.806 3.994 3.994 0 00-5.058.501 4.038 4.038 0 00-1.175 2.845zM23.748 22.84c-.792 0-1.567.236-2.226.678a4.021 4.021 0 00-1.476 1.806 4.042 4.042 0 00.869 4.387 3.99 3.99 0 004.366.873A4.01 4.01 0 0027.08 29.1a4.039 4.039 0 00-.5-5.082 4 4 0 00-2.832-1.18zM34 15.994c0-.796-.235-1.574-.675-2.236a4.01 4.01 0 00-1.798-1.483 3.99 3.99 0 00-4.367.873 4.042 4.042 0 00-.869 4.387 4.02 4.02 0 001.476 1.806 3.993 3.993 0 002.226.678 4.003 4.003 0 002.832-1.18A4.04 4.04 0 0034 15.993z M5.007 11.969c-.793 0-1.567.236-2.226.678a4.021 4.021 0 00-1.476 1.807 4.042 4.042 0 00.869 4.386 4.001 4.001 0 004.366.873 4.011 4.011 0 001.798-1.483 4.038 4.038 0 00-.5-5.08 4.004 4.004 0 00-2.831-1.181z"
-                        />
-                      </svg>
+                      <img
+                        src="/assets/logo2.svg"
+                        alt="logo"
+                        className="h-15 w-15"
+                      />
                     </a>
                   </div>
 
@@ -252,19 +217,19 @@ export default function Nutri() {
                         {/* Search */}
                         <div className="max-w-xs mx-auto w-full lg:max-w-md">
                           <label htmlFor="search" className="sr-only">
-                            Search
+                            Búsqueda
                           </label>
                           <div className="relative text-white focus-within:text-gray-600">
                             <div className="pointer-events-none absolute inset-y-0 left-0 pl-3 flex items-center">
-                              <SearchIcon
-                                className="h-5 w-5"
+                              <div
+                                className="i-heroicons:magnifying-glass-20-solid h-5 w-5"
                                 aria-hidden="true"
                               />
                             </div>
                             <input
                               id="search"
                               className="block w-full text-white bg-white bg-opacity-20 py-2 pl-10 pr-3 border border-transparent rounded-md leading-5 focus:text-gray-900 placeholder-white focus:outline-none focus:bg-opacity-100 focus:border-transparent focus:placeholder-gray-500 focus:ring-0 sm:text-sm"
-                              placeholder="Search"
+                              placeholder="Búsqueda"
                               type="search"
                               name="search"
                             />
@@ -527,58 +492,6 @@ export default function Nutri() {
 
               {/* Right column */}
               <div className="grid grid-cols-1 gap-4">
-                {/* Announcements */}
-                <section aria-labelledby="announcements-title">
-                  <div className="rounded-lg bg-white overflow-hidden shadow">
-                    <div className="p-6">
-                      <h2
-                        className="text-base font-medium text-gray-900"
-                        id="announcements-title"
-                      >
-                        Tareas Pendientes
-                      </h2>
-                      <div className="flow-root mt-6">
-                        <ul
-                          role="list"
-                          className="-my-5 divide-y divide-gray-200"
-                        >
-                          {announcements.map((announcement) => (
-                            <li key={announcement.id} className="py-5">
-                              <div className="relative focus-within:ring-2 focus-within:ring-cyan-500">
-                                <h3 className="text-sm font-semibold text-gray-800">
-                                  <a
-                                    href={announcement.href}
-                                    className="hover:underline focus:outline-none"
-                                  >
-                                    {/* Extend touch target to entire panel */}
-                                    <span
-                                      className="absolute inset-0"
-                                      aria-hidden="true"
-                                    />
-                                    {announcement.title}
-                                  </a>
-                                </h3>
-                                <p className="mt-1 text-sm text-gray-600 line-clamp-2">
-                                  {announcement.preview}
-                                </p>
-                              </div>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                      <div className="mt-6">
-                        <a
-                          href="#"
-                          className="w-full flex justify-center items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50"
-                        >
-                          View all
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-
-                {/* Recent Hires */}
                 <section aria-labelledby="recent-hires-title">
                   <div className="rounded-lg bg-white overflow-hidden shadow">
                     <div className="p-6">
@@ -635,7 +548,63 @@ export default function Nutri() {
                     </div>
                   </div>
                 </section>
+                {/* Announcements */}
+                <section aria-labelledby="announcements-title">
+                  <div className="rounded-lg bg-white overflow-hidden shadow">
+                    <div className="p-6">
+                      <h2
+                        className="text-base font-medium text-gray-900"
+                        id="announcements-title"
+                      >
+                        Tareas Pendientes
+                      </h2>
+                      <div className="flow-root mt-6">
+                        <ul
+                          role="list"
+                          className="-my-5 divide-y divide-gray-200"
+                        >
+                          {tareasPendientes.map((tarea) => (
+                            <li key={tarea.id} className="py-2">
+                              <div className="relative focus-within:ring-2 focus-within:ring-cyan-500">
+                                <h3 className="text-sm font-semibold text-gray-800">
+                                  <div className="hover:underline focus:outline-none">
+                                    {/* Extend touch target to entire panel */}
+                                    <span
+                                      className="absolute inset-0"
+                                      aria-hidden="true"
+                                    />
+                                    {tarea.titulo}
+                                  </div>
+                                </h3>
+                                <p className="mt-1 text-sm text-gray-600">
+                                  {tarea.contenido}
+                                </p>
+                                <div className="flex flex-row-reverse my-2">
+                                  <button
+                                    type="button"
+                                    className="inline-flex items-center px-6 py-1.5 border border-transparent text-3 font-medium rounded-full shadow-sm text-white bg-first"
+                                  >
+                                    Atender
+                                  </button>
+                                </div>
+                              </div>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                      <div className="mt-6">
+                        <a
+                          href="#"
+                          className="w-full flex justify-center items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50"
+                        >
+                          Ver todas
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </section>
               </div>
+              {/* Pacientes */}
             </div>
           </div>
         </main>
