@@ -70,6 +70,7 @@ declare global {
   const Platillo: typeof import('./components/home/comida/Platillo.jsx')['default']
   const PlatilloPlan: typeof import('./components/estilo-de-vida/comida/comida-plan/plan-del-dia/PlatilloPlan.jsx')['default']
   const PublicacionNew: typeof import('./components/comunidad/PublicacionNew.jsx')['default']
+  const PublicacionOficial: typeof import('./components/comunidad/PublicacionOficial.jsx')['default']
   const Publico: typeof import('./components/comunidad/Publico.jsx')['default']
   const Racha: typeof import('./components/home/racha/Racha.jsx')['default']
   const RachaDia: typeof import('./components/home/racha/RachaDia.jsx')['default']
