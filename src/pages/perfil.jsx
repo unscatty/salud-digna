@@ -1,5 +1,28 @@
 import BottomNavbar from '~/components/common/BottomNavbar';
+import { getAuth, onAuthStateChanged, signOut } from 'firebase/auth';
+import { initializeApp } from 'firebase/app';
+import { firebaseConfig } from '~/db/firebase-config.jsx';
+
 export default function Perfil() {
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      setUser(user);
+    });
+  }, []);
+
+  const logout = async () => {
+    localStorage.setItem('isLogged', null);
+
+    await signOut(auth);
+
+    window.location.href = '/login';
+  };
+
   return (
     <>
       <div className="h-15 w-100% flex items-center">
@@ -24,6 +47,12 @@ export default function Perfil() {
         <div className="w-75 h-10 inline-flex justify-center items-center border-rounded-3xl bg-gray-300">
           <p className="text-l text-black">Soporte</p>
         </div>
+        <button
+          onClick={logout}
+          className="w-75 h-10 inline-flex justify-center items-center border-rounded-3xl bg-gray-300"
+        >
+          <p className="text-l text-black">Cerrar Sesión</p>
+        </button>
       </div>
       <BottomNavbar />
     </>

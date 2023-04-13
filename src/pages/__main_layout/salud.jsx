@@ -1,6 +1,7 @@
 import { Tab } from '@headlessui/react';
 import { Fragment } from 'react';
 import { SaludMainContents } from '~/components/salud/SaludMainContents';
+// import
 
 export default function Salud() {
   return (
