@@ -1,0 +1,366 @@
+[
+  {
+    "id": "1c0a1b1c-1c0a-1b1c-1c0a-1b1c0a1b1c0a",
+    "nombre": "Arturo Sandoval",
+    "email": "arturo-1990@gmail.com",
+    "telefono": "1234567890",
+    "direccion": "Calle 1, Colonia 1, Ciudad 1, Estado 1, CP 12345",
+    "fechaNacimiento": "1990-01-01",
+    "alergias": [
+      "Polen",
+      "Polvo",
+      "Pelo de perro"
+    ],
+    "observaciones": "Paciente con diabetes tipo 2, hipertensión arterial, colesterol alto, triglicéridos altos, obesidad. Tiene 3 años de no hacer ejercicio. Es propenso a lesiones en tobillos y rodillas.",
+    "imageUrl": "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    "attachments": [
+      "expediente_clinico.pdf",
+      "cita_medica.pdf",
+      "diagnostico_diabetes_tipo_2.pdf"
+    ],
+    "datosAntropometricos": {
+      "estatura": 1.80,
+      "peso": 80.0,
+      "cintura": 80.0,
+      "cadera": 90.0,
+      "brazo": 30.0,
+      "muslo": 50.0,
+      "pantorrilla": 40.0
+    },
+    "datosMedicos": {
+      "presion_arterial": 120,
+      "colesterol": 200,
+      "glucosa": 100,
+      "trigliceridos": 150,
+      "frecuenciaCardiaca": 80,
+      "frecuenciaRespiratoria": 20,
+      "indiceMasaCorporal": 24.69,
+      "porcentajeGrasa": 20.0,
+      "porcentajeMusculo": 80.0,
+      "porcentajeAgua": 60.0,
+      "porcentajeOsteoporosis": 10.0,
+      "porcentajeMetabolismoBasal": 30.0,
+      "porcentajeMetabolismoActividad": 40.0,
+      "porcentajeMetabolismoTotal": 50.0
+    },
+    "datosEvaluacion": {
+      "flexibilidad": 10,
+      "resistencia": 20,
+      "fuerza": 30,
+      "agilidad": 40,
+      "equilibrio": 50,
+      "velocidad": 60,
+      "coordinacion": 70,
+      "potencia": 80,
+      "reactividad": 90
+    },
+    "lineaDeTiempo": [
+      {
+        "fecha": "2019-01-01",
+        "evento": "Cita de valoración"
+      },
+      {
+        "fecha": "2019-01-01",
+        "evento": "Creación de expediente clínico"
+      },
+      {
+        "fecha": "2019-01-02",
+        "evento": "Cita de seguimiento"
+      },
+      {
+        "fecha": "2019-01-03",
+        "evento": "Segunda cita de seguimiento"
+      }
+    ],
+    "notas": [
+      {
+        "id": 1,
+        "titulo": "Motivación",
+        "contenido": "El paciente está motivado a mejorar su salud y calidad de vida."
+      },
+      {
+        "id": 2,
+        "titulo": "Autoestima",
+        "contenido": "El paciente tiene problemas de autoestima. Se siente inseguro y no confía en sí mismo. No se siente capaz de lograr sus metas. Se siente frustrado y deprimido."
+      },
+      {
+        "id": 3,
+        "titulo": "Plan de acción",
+        "contenido": "El paciente debe realizar ejercicio de fuerza y cardiovasculares 3 veces por semana. Debe realizar ejercicios de estiramiento y flexibilidad 2 veces por semana."
+      }
+    ]
+  },
+  {
+    "id": "2c0a1b1c-2c0a-1b1c-2c0a-1b1c0a1b1c0a",
+    "nombre": "Roberto Hernandez",
+    "email": "robertoher@gmail.com",
+    "telefono": "1234567890",
+    "direccion": "Calle 2, Colonia 2, Ciudad 2, Estado 2, CP 12345",
+    "fechaNacimiento": "1990-01-01",
+    "alergias": [
+      "Polen",
+      "Polvo",
+      "Pelo de perro"
+    ],
+    "observaciones": "Paciente con diabetes tipo 2, hipertensión arterial, colesterol alto, triglicéridos altos, obesidad. Tiene 3 años de no hacer ejercicio. Es propenso a lesiones en tobillos y rodillas.",
+    "imageUrl": "https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    "attachments": [
+      "expediente_clinico.pdf",
+      "cita_medica.pdf",
+      "diagnostico_diabetes_tipo_2.pdf"
+    ],
+    "datosAntropometricos": {
+      "estatura": 1.80,
+      "peso": 80.0,
+      "cintura": 80.0,
+      "cadera": 90.0,
+      "brazo": 30.0,
+      "muslo": 50.0,
+      "pantorrilla": 40.0
+    },
+    "datosMedicos": {
+      "presionArterial": 120,
+      "colesterol": 200,
+      "glucosa": 100,
+      "trigliceridos": 150,
+      "frecuenciaCardiaca": 80,
+      "frecuenciaRespiratoria": 20,
+      "indiceMasaCorporal": 24.69,
+      "porcentajeGrasa": 20.0,
+      "porcentajeMusculo": 80.0,
+      "porcentajeAgua": 60.0,
+      "porcentajeOsteoporosis": 10.0,
+      "porcentajeMetabolismoBasal": 30.0,
+      "porcentajeMetabolismoActividad": 40.0,
+      "porcentajeMetabolismoTotal": 50.0
+    },
+    "datosEvaluacion": {
+      "flexibilidad": 10,
+      "resistencia": 20,
+      "fuerza": 30,
+      "agilidad": 40,
+      "equilibrio": 50,
+      "velocidad": 60,
+      "coordinacion": 70,
+      "potencia": 80,
+      "reactividad": 90
+    },
+    "lineaDeTiempo": [
+      {
+        "fecha": "2019-01-01",
+        "evento": "Cita de valoración"
+      },
+      {
+        "fecha": "2019-01-01",
+        "evento": "Creación de expediente clínico"
+      },
+      {
+        "fecha": "2019-01-02",
+        "evento": "Cita de seguimiento"
+      },
+      {
+        "fecha": "2019-01-03",
+        "evento": "Segunda cita de seguimiento"
+      }
+    ],
+    "notas": [
+      {
+        "id": 1,
+        "titulo": "Motivación",
+        "contenido": "El paciente está motivado a mejorar su salud y calidad de vida."
+      },
+      {
+        "id": 2,
+        "titulo": "Autoestima",
+        "contenido": "El paciente tiene problemas de autoestima. Se siente inseguro y no confía en sí mismo. No se siente capaz de lograr sus metas. Se siente frustrado y deprimido."
+      },
+      {
+        "id": 3,
+        "titulo": "Plan de acción",
+        "contenido": "El paciente debe realizar ejercicio de fuerza y cardiovasculares 3 veces por semana. Debe realizar ejercicios de estiramiento y flexibilidad 2 veces por semana."
+      }
+    ]
+  },
+  {
+    "id": "3c0a1b1c-3c0a-1b1c-3c0a-1b1c0a1b1c0a",
+    "nombre": "Juan Perez",
+    "email": "jperez@hotmail.com",
+    "telefono": "1234567890",
+    "direccion": "Calle 3, Colonia 3, Ciudad 3, Estado 3, CP 12345",
+    "fechaNacimiento": "1990-01-01",
+    "alergias": [
+      "Polen",
+      "Polvo",
+      "Pelo de perro"
+    ],
+    "observaciones": "Paciente con diabetes tipo 2, hipertensión arterial, colesterol alto, triglicéridos altos, obesidad. Tiene 3 años de no hacer ejercicio. Es propenso a lesiones en tobillos y rodillas.",
+    "imageUrl": "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    "attachments": [
+      "expediente_clinico.pdf",
+      "cita_medica.pdf",
+      "diagnostico_diabetes_tipo_2.pdf"
+    ],
+    "datosAntropometricos": {
+      "estatura": 1.80,
+      "peso": 80.0,
+      "cintura": 80.0,
+      "cadera": 90.0,
+      "brazo": 30.0,
+      "muslo": 50.0,
+      "pantorrilla": 40.0
+    },
+    "datosMedicos": {
+      "presion_arterial": 120,
+      "colesterol": 200,
+      "glucosa": 100,
+      "trigliceridos": 150,
+      "frecuencia_cardiaca": 80,
+      "frecuencia_respiratoria": 20,
+      "indice_masa_corporal": 24.69,
+      "porcentaje_grasa": 20.0,
+      "porcentaje_musculo": 80.0,
+      "porcentaje_agua": 60.0,
+      "porcentaje_osteoporosis": 10.0,
+      "porcentaje_metabolismo_basal": 30.0,
+      "porcentaje_metabolismo_actividad": 40.0,
+      "porcentaje_metabolismo_total": 50.0
+    },
+    "datosEvaluacion": {
+      "flexibilidad": 10,
+      "resistencia": 20,
+      "fuerza": 30,
+      "agilidad": 40,
+      "equilibrio": 50,
+      "velocidad": 60,
+      "coordinacion": 70,
+      "potencia": 80,
+      "reactividad": 90
+    },
+    "lineaDeTiempo": [
+      {
+        "fecha": "2019-01-01",
+        "evento": "Cita de valoración"
+      },
+      {
+        "fecha": "2019-01-01",
+        "evento": "Creación de expediente clínico"
+      },
+      {
+        "fecha": "2019-01-02",
+        "evento": "Cita de seguimiento"
+      },
+      {
+        "fecha": "2019-01-03",
+        "evento": "Segunda cita de seguimiento"
+      }
+    ],
+    "notas": [
+      {
+        "id": 1,
+        "titulo": "Motivación",
+        "contenido": "El paciente está motivado a mejorar su salud y calidad de vida."
+      },
+      {
+        "id": 2,
+        "titulo": "Autoestima",
+        "contenido": "El paciente tiene problemas de autoestima. Se siente inseguro y no confía en sí mismo. No se siente capaz de lograr sus metas. Se siente frustrado y deprimido."
+      },
+      {
+        "id": 3,
+        "titulo": "Plan de acción",
+        "contenido": "El paciente debe realizar ejercicio de fuerza y cardiovasculares 3 veces por semana. Debe realizar ejercicios de estiramiento y flexibilidad 2 veces por semana."
+      }
+    ]
+  },
+  {
+    "id": "4c0a1b1c-4c0a-1b1c-4c0a-1b1c0a1b1c0a",
+    "nombre": "Maria Lopez",
+    "email": "maria.lopez.m@outlook.com",
+    "telefono": "1234567890",
+    "direccion": "Calle 4, Colonia 4, Ciudad 4, Estado 4, CP 12345",
+    "fechaNacimiento": "1990-01-01",
+    "alergias": [
+      "Polen",
+      "Polvo",
+      "Pelo de perro"
+    ],
+    "observaciones": "Paciente con diabetes tipo 2, hipertensión arterial, colesterol alto, triglicéridos altos, obesidad. Tiene 3 años de no hacer ejercicio. Es propenso a lesiones en tobillos y rodillas.",
+    "imageUrl": "https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    "attachments": [
+      "expediente_clinico.pdf",
+      "cita_medica.pdf",
+      "diagnostico_diabetes_tipo_2.pdf"
+    ],
+    "datosAntropometricos": {
+      "estatura": 1.80,
+      "peso": 80.0,
+      "cintura": 80.0,
+      "cadera": 90.0,
+      "brazo": 30.0,
+      "muslo": 50.0,
+      "pantorrilla": 40.0
+    },
+    "datosMedicos": {
+      "presionArterial": 120,
+      "colesterol": 200,
+      "glucosa": 100,
+      "trigliceridos": 150,
+      "frecuenciaCardiaca": 80,
+      "frecuenciaRespiratoria": 20,
+      "indiceMasaCorporal": 24.69,
+      "porcentajeGrasa": 20.0,
+      "porcentajeMusculo": 80.0,
+      "porcentajeAgua": 60.0,
+      "porcentajeOsteoporosis": 10.0,
+      "porcentajeMetabolismoBasal": 30.0,
+      "porcentajeMetabolismoActividad": 40.0,
+      "porcentajeMetabolismoTotal": 50.0
+    },
+    "datosEvaluacion": {
+      "flexibilidad": 10,
+      "resistencia": 20,
+      "fuerza": 30,
+      "agilidad": 40,
+      "equilibrio": 50,
+      "velocidad": 60,
+      "coordinacion": 70,
+      "potencia": 80,
+      "reactividad": 90
+    },
+    "lineaDeTiempo": [
+      {
+        "fecha": "2019-01-01",
+        "evento": "Cita de valoración"
+      },
+      {
+        "fecha": "2019-01-01",
+        "evento": "Creación de expediente clínico"
+      },
+      {
+        "fecha": "2019-01-02",
+        "evento": "Cita de seguimiento"
+      },
+      {
+        "fecha": "2019-01-03",
+        "evento": "Segunda cita de seguimiento"
+      }
+    ],
+    "notas": [
+      {
+        "id": 1,
+        "titulo": "Motivación",
+        "contenido": "El paciente está motivado a mejorar su salud y calidad de vida."
+      },
+      {
+        "id": 2,
+        "titulo": "Autoestima",
+        "contenido": "El paciente tiene problemas de autoestima. Se siente inseguro y no confía en sí mismo. No se siente capaz de lograr sus metas. Se siente frustrado y deprimido."
+      },
+      {
+        "id": 3,
+        "titulo": "Plan de acción",
+        "contenido": "El paciente debe realizar ejercicio de fuerza y cardiovasculares 3 veces por semana. Debe realizar ejercicios de estiramiento y flexibilidad 2 veces por semana."
+      }
+    ]
+  }
+]
