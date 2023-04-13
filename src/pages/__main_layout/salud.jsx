@@ -6,11 +6,8 @@ import { SaludMainContents } from '~/components/salud/SaludMainContents';
 export default function Salud() {
   return (
     <div className="container">
-      <div className="card p-3">
-        <Calendar />
-      </div>
       <Tab.Group defaultIndex={0}>
-        <Tab.List className="grid grid-cols-3 gap-3.5 my-3">
+        <Tab.List className="grid grid-cols-3 gap-3.5 my-2">
           {SaludMainContents.map((tab) => (
             <Tab as={Fragment} key={tab.name}>
               {({ selected }) => (

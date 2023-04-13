@@ -1,6 +1,9 @@
 export default function SaludCitas({ tab }) {
   return (
     <div className="flex flex-col h-full">
+      <div className="card p-3 mb-2">
+        <Calendar />
+      </div>
       <div className=" card flex-auto">
         <div className="flex gap-3 text-black items-center">
           <i className={`${tab.iconClass} w-5 h-5 text-black`} />
