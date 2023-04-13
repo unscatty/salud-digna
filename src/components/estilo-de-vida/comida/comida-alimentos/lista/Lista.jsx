@@ -1,5 +1,40 @@
 import ListaItem from './ListaItem';
 
+const listaArticulos = [
+  {
+    id: 1,
+    name: 'Yogurt',
+  },
+  {
+    id: 2,
+    name: 'Leche',
+  },
+  {
+    id: 3,
+    name: 'Queso',
+  },
+  {
+    id: 4,
+    name: 'Huevo',
+  },
+  {
+    id: 5,
+    name: 'Carne',
+  },
+  {
+    id: 6,
+    name: 'Pescado',
+  },
+  {
+    id: 7,
+    name: 'Frutas',
+  },
+  {
+    id: 8,
+    name: 'Verduras',
+  },
+];
+
 export default function Lista() {
   return (
     <div className="racha-container grid grid-cols-[1fr_auto] gap-3 pt-4">
@@ -50,10 +85,9 @@ export default function Lista() {
         </div>
 
         <div className="flex pt-2 flex-col gap-1">
-          <ListaItem />
-          <ListaItem />
-          <ListaItem />
-          <ListaItem />
+          {listaArticulos.map((comida) => (
+            <ListaItem key={comida.id} comida={comida} />
+          ))}
         </div>
       </div>
     </div>

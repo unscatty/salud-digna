@@ -1,5 +1,32 @@
 import RecetasPlatillo from './RecetasPlatillo';
 
+const recetas = [
+  {
+    comida: 'Yogurt con arandanos',
+    icon: <img src="/assets/yogurt.png" className="w-100"></img>,
+  },
+  {
+    comida: 'Avena con frutas',
+    icon: <img src="/assets/yogurt.png" className="w-100"></img>,
+  },
+  {
+    comida: 'Pollo asado con ensalada',
+    icon: <img src="/assets/yogurt.png" className="w-100"></img>,
+  },
+  {
+    comida: 'Pescado ahumado con verduras',
+    icon: <img src="/assets/yogurt.png" className="w-100"></img>,
+  },
+  {
+    comida: 'Tacos de pescado',
+    icon: <img src="/assets/yogurt.png" className="w-100"></img>,
+  },
+  {
+    comida: 'Tostadas de atún',
+    icon: <img src="/assets/yogurt.png" className="w-100"></img>,
+  },
+];
+
 export default function Recetas() {
   return (
     <div className="racha-container grid grid-cols-[1fr_auto] gap-3 pt-4">
@@ -17,30 +44,9 @@ export default function Recetas() {
         </div>
 
         <div className="grid grid-cols-3 gap-2">
-          <RecetasPlatillo
-            comida="Yogurt con arandanos"
-            icon={<img src="/assets/yogurt.png" className="w-100"></img>}
-          />
-          <RecetasPlatillo
-            comida="Yogurt con arandanos"
-            icon={<img src="/assets/yogurt.png" className="w-100"></img>}
-          />
-          <RecetasPlatillo
-            comida="Yogurt con arandanos"
-            icon={<img src="/assets/yogurt.png" className="w-100"></img>}
-          />
-          <RecetasPlatillo
-            comida="Yogurt con arandanos"
-            icon={<img src="/assets/yogurt.png" className="w-100"></img>}
-          />
-          <RecetasPlatillo
-            comida="Yogurt con arandanos"
-            icon={<img src="/assets/yogurt.png" className="w-100"></img>}
-          />
-          <RecetasPlatillo
-            comida="Yogurt con arandanos"
-            icon={<img src="/assets/yogurt.png" className="w-100"></img>}
-          />
+          {recetas.map((receta) => (
+            <RecetasPlatillo comida={receta.comida} icon={receta.icon} />
+          ))}
         </div>
       </div>
     </div>

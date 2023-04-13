@@ -27,6 +27,48 @@ export default function Publico(props) {
           descripcion={
             <div className="flex gap-2 items-center">
               <div>
+                <p className="text-4 text-justify max-w-[60vw]">
+                  Ha comenzado su transformación de vida con{' '}
+                  <span className="text-blue">#SaludDigna</span>
+                </p>
+              </div>
+            </div>
+          }
+          image="/images/profile-3.jpg"
+        />
+        <PublicacionNew
+          nombre="Jose Luis Perez"
+          date="13 ABR 2023"
+          descripcion={
+            <div className="flex gap-2 items-center">
+              <div>
+                <p className="text-4 text-justify flex breakwords max-w-[60vw]">
+                  ¡Quiero compartir mi experiencia increíble con Salud Digna!
+                  <br />
+                  Gracias a su app de nutrición, logré bajar 30 kg y mejorar mi
+                  salud significativamente. Ahora me siento con más energía y
+                  vitalidad que nunca.
+                  <br />
+                  ¡Gracias Salud Digna por hacer posible mi transformación!
+                  Invito a más personas a unirse a esta app para mejorar su
+                  calidad de vida.
+                </p>
+                <span className="text-blue">#SaludDigna</span> {''}
+                <span className="text-blue">#NutriciónSaludable</span> {''}
+                <span className="text-blue">#TransformaciónPersonal</span>
+              </div>
+            </div>
+          }
+          image="/images/profile-2.jpg"
+          likes={157}
+        />
+        <PublicacionNew
+          nombre="Antonio Ramírez"
+          date="12 ABR 2023"
+          image="/assets/profile.jpg"
+          descripcion={
+            <div className="flex gap-2 items-center">
+              <div>
                 <p className="text-4">¡Está en racha de ejecicio!</p>
               </div>
               <div className="flex flex-col ml-auto items-center">
@@ -37,7 +79,6 @@ export default function Publico(props) {
               </div>
             </div>
           }
-          image="/assets/cambio_fisico.jpg"
         />
       </div>
     </div>

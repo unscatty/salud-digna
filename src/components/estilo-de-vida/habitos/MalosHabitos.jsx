@@ -33,7 +33,7 @@ export default function MalosHabitos() {
         <div className="malos-habitos-container">
           <div className="malos-habitos-container_item-container grid grid-cols-[1fr_auto] bg-third p-2 rounded justify-between position-relative">
             <p className="text-xs font-bold ">
-              Comí una hamburguesa porque sali con amigos
+              Fumé un cigarrillo durante la tarde
             </p>
             <div className="flex flex-col gap-1">
               <span className="bg-gray-100 text-gray-800 text-[8px] font-medium mr-2 px-2.5 py-0.5 rounded  dark:text-gray-400 h-4">
@@ -79,8 +79,7 @@ export default function MalosHabitos() {
             <div className="bg-first p-2 text-xs text-third b-rounded">
               <p className="font-bold">Consejo</p>
               <p className="">
-                La siguiente vez que vayas con amigos lleva tu propia comida y
-                haz saber que estas en un cambio para tu salud
+                Cuando sientas las ganas de fumar, ¡mejor mastica un chicle!
               </p>
             </div>
           )}

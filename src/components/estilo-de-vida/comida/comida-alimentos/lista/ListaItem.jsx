@@ -1,4 +1,4 @@
-export default function ListaItem() {
+export default function ListaItem({ comida }) {
   const [counter, setCounter] = useState(0);
 
   //increase counter
@@ -33,20 +33,20 @@ export default function ListaItem() {
             className="ml-4 text-xs font-medium text-gray-900 dark:text-gray-300 flex gap-2"
           >
             <img src="/assets/yogurt.png" className="w-5 h-5"></img>
-            <p>Yogurt</p>
+            <p>{comida.name}</p>
           </label>
         </div>
       </div>
       <div className="counter-container flex gap-3 items-center">
         <span
-          className="minus-icon  text-[8px]  font-semibold inline-block uppercase rounded-full text-third bg-red uppercase last:mr-0  font-bold drop-shadow-md aspect-square flex items-center w-5 h-5 justify-center"
+          className="minus-icon  text-[8px]  font-semibold inline-block uppercase rounded-full text-third bg-red uppercase last:mr-0  font-bold drop-shadow-md aspect-square flex items-center w-5 h-5 justify-center cursor-pointer"
           onClick={decrease}
         >
           -
         </span>
         <span className="text-xs">{counter}</span>
         <span
-          className="minus-icon text-[8px]  font-semibold inline-block  w-5 h-5 justify-center uppercase rounded-full text-third bg-fifth uppercase last:mr-0  font-bold drop-shadow-md aspect-square flex items-center"
+          className="minus-icon text-[8px]  font-semibold inline-block  w-5 h-5 justify-center uppercase rounded-full text-third bg-fifth uppercase last:mr-0  font-bold drop-shadow-md aspect-square flex items-center cursor-pointer"
           onClick={increase}
         >
           +

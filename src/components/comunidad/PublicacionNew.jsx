@@ -11,7 +11,7 @@ const predeterminedComments = [
 
 export default function PublicacionNew(props) {
   const [like, setLike] = useState(false);
-  const [likeCount, setLikeCount] = useState(0);
+  const [likeCount, setLikeCount] = useState(props.likes ?? 0);
 
   const [comments, setComments] = useState([]);
 
@@ -37,11 +37,7 @@ export default function PublicacionNew(props) {
     <div className="card bg-third p-4 mt-2 w-full">
       <div className="card-header grid  grid-rows-2 grid-cols-[auto_1fr_auto]">
         <div className="card-profile row-span-2 mr-2">
-          <img
-            src="/assets/profile.jpg"
-            alt=""
-            className="h-8 w-8 rounded-full"
-          />
+          <img src={props.image} alt="" className="h-8 w-8 rounded-full" />
         </div>
         <div className="card-name">
           <p className="text-xs font-semibold">{props.nombre}</p>
